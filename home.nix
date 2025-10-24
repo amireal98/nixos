@@ -6,7 +6,7 @@ let
  configs = {
   hypr = "hypr";
   kitty = "kitty";
-  waybar = "waybar";
+  # waybar = "waybar";
  };
 in
 
