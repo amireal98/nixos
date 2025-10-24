@@ -58,6 +58,7 @@
    gemini-cli
    ollama
    vscodium
+   onefetch
   ];
 
   fonts.packages = with pkgs; [

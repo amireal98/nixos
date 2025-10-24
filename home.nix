@@ -23,7 +23,7 @@ in
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
    l = "ls -la";
    gl = "lazygit";
-   gp = "git push -u origin main";
+   gp = "onefetch && git push -u origin main";
   };
  };
 
