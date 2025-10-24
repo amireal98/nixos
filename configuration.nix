@@ -61,7 +61,8 @@
   ];
 
   fonts.packages = with pkgs; [
-   nerd-fonts.jetbrains-mono
+   # nerd-fonts.jetbrains-mono
+   nerd-fonts.gohufont
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
