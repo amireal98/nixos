@@ -6,7 +6,7 @@ let
  configs = {
   hypr = "hypr";
   kitty = "kitty";
-  # waybar = "waybar";
+  waybar = "waybar";
  };
 in
 
@@ -22,6 +22,7 @@ in
    btw = "echo I use NixOS, btw";
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
    l = "ls -la";
+   g = "lazygit";
   };
  };
 
