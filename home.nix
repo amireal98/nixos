@@ -31,7 +31,7 @@ in
   enable = true;
   presets = [
    "nerd-font-symbols"
-  ]
+  ];
  };
 
  xdg.configFile = builtins.mapAttrs
