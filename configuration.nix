@@ -70,6 +70,7 @@
    onefetch
    yazi
    yaziPlugins.starship
+   rose-pine-gtk-theme
   ];
 
   fonts.packages = with pkgs; [
