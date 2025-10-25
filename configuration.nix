@@ -48,6 +48,8 @@
 
   environment.systemPackages = with pkgs; [
    vim
+   helix
+   neovim
    xwayland-satellite
    lazygit
    nitch
@@ -58,7 +60,6 @@
    swww
    nautilus
    nwg-look
-   neovim
    rofi-wayland
    brightnessctl
    adwaita-icon-theme
@@ -66,7 +67,6 @@
    ollama
    vscodium
    onefetch
-   tokyonight-gtk-theme
    yazi
    yaziPlugins.starship
   ];
