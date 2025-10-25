@@ -1,6 +1,13 @@
 {
  description = "NixOS";
  inputs = {
+  obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
+  nvf = {
+   url = "github:NotAShelf/nvf";
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.obsidian-nvim.follows = "obsidian-nvim";
+  };
+
   nixpkgs.url = "nixpkgs/nixos-25.05";
   home-manager = {
    url = "github:nix-community/home-manager/release-25.05";
