@@ -20,7 +20,6 @@
   };
 
   programs.niri.enable = true;
-  programs.xwayland-satellite.enable = true;
 
   services.displayManager.ly.enable = true;
 
@@ -46,6 +45,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
+   xwayland-satellite
    lazygit
    nitch
    fastfetch
