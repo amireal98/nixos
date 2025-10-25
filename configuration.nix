@@ -67,6 +67,8 @@
    vscodium
    onefetch
    tokyonight-gtk-theme
+   yazi
+   yaziPlugins.starship
   ];
 
   fonts.packages = with pkgs; [
