@@ -19,6 +19,11 @@
    xwayland.enable = true;
   };
 
+  programs.niri = {
+   enable = true;
+  };
+  programs.xwayland-satellite.enable = true;
+
   services.displayManager.ly.enable = true;
 
   services.libinput.enable = true;
