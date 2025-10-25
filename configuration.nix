@@ -18,11 +18,7 @@
    enable = true;
    xwayland.enable = true;
   };
-
-  programs.niri.enable = true;
-
   services.displayManager.ly.enable = true;
-
   services.libinput.enable = true;
 
   users.users.amireal = {

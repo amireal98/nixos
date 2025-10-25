@@ -7,7 +7,6 @@ let
   hypr = "hypr";
   kitty = "kitty";
   waybar = "waybar";
-  niri = "niri";
  };
 in
 
