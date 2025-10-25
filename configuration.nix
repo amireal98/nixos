@@ -45,6 +45,7 @@
    nitch
    fastfetch
    kitty
+   ghostty
    waybar
    swww
    nautilus
