@@ -59,6 +59,7 @@
    ollama
    vscodium
    onefetch
+   tokyonight-gtk-theme
   ];
 
   fonts.packages = with pkgs; [
