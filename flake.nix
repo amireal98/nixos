@@ -1,13 +1,7 @@
 {
  description = "NixOS";
  inputs = {
-  obsidian-nvim.url = "github:epwalsh/obsidian.nvim";
-  nvf = {
-   url = "github:NotAShelf/nvf";
-    inputs.nixpkgs.follows = "nixpkgs";
-    inputs.obsidian-nvim.follows = "obsidian-nvim";
-  };
-
+  nvf.url = "github:notashelf/nvf";
   nixpkgs.url = "nixpkgs/nixos-25.05";
   home-manager = {
    url = "github:nix-community/home-manager/release-25.05";
@@ -20,6 +14,7 @@
    modules = [
     ./configuration.nix
     home-manager.nixosModules.home-manager
+    nvf.homeManagerModules.default # <- this imports the home-manager module that provides the options
     {
      home-manager = {
       useGlobalPkgs = true;
