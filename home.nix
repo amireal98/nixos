@@ -18,6 +18,7 @@ in
  programs.gh.enable = true;
  programs.git.enable = true;
  home.stateVersion = "25.05";
+ programs.nushell.enable = true;
  programs.bash = {
   enable = true;
   shellAliases = {
