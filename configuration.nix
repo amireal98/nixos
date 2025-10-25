@@ -41,7 +41,7 @@
    enable = true;
    presets = [
     "nerd-font-symbols"
-   ]
+   ];
   };
   
   programs.firefox.enable = true;
