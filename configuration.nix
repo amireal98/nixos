@@ -62,6 +62,7 @@
 
   fonts.packages = with pkgs; [
    nerd-fonts.jetbrains-mono
+   cozette
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
