@@ -27,12 +27,6 @@ in
    gitp = "onefetch && git push -u origin main";
   };
  };
- programs.starship = {
-  enable = true;
-  presets = [
-   "nerd-font-symbols"
-  ];
- };
 
  xdg.configFile = builtins.mapAttrs
   (name: subpath: {

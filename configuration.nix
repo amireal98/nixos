@@ -36,6 +36,13 @@
     init.defaultBranch = "main";
    };
   };
+
+  programs.starship = {
+   enable = true;
+   presets = [
+    "nerd-font-symbols"
+   ]
+  };
   
   programs.firefox.enable = true;
 
