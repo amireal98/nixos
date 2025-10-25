@@ -13,8 +13,8 @@
    system = "x86_64-linux";
    modules = [
     ./configuration.nix
+    nvf.homeManagerModules.default
     home-manager.nixosModules.home-manager
-    nvf.homeManagerModules.default # <- this imports the home-manager module that provides the options
     {
      home-manager = {
       useGlobalPkgs = true;
