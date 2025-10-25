@@ -23,8 +23,8 @@ in
    btw = "echo I use NixOS, btw";
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
    l = "ls -la";
-   gl = "lazygit";
-   gp = "onefetch && git push -u origin main";
+   lgit = "lazygit";
+   gitp = "onefetch && git push -u origin main";
   };
  };
 
