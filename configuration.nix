@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./vim.nix
+      ./nvim.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
