@@ -13,7 +13,7 @@
 
  outputs = { self, nixpkgs, home-manager, nvf, ... }: {
 
-  packages."x86_65-linux".default =
+  packages."x86_64-linux".default =
    (nvf.lib.neovimConfiguration {
     pkgs = nixpkgs.legacyPackages."x86_64-linux";
     modules = [ ./nvf-configuration.nix ];
