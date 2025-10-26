@@ -4,7 +4,6 @@ let
  dotfiles = "${config.home.homeDirectory}/nixos-dots/config";
  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
  configs = {
-  hypr = "hypr";
   kitty = "kitty";
   waybar = "waybar";
   niri = "niri";
