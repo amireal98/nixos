@@ -73,6 +73,8 @@
    vesktop
    magnetic-catppuccin-gtk
    catppuccin-cursors
+   lutris
+   mangohud
   ];
 
   fonts.packages = with pkgs; [
