@@ -71,6 +71,7 @@
    vesktop
    magnetic-catppuccin-gtk
    catppuccin-cursors
+   gnome-boxes
   ];
 
   fonts.packages = with pkgs; [
