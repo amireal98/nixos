@@ -50,8 +50,6 @@
    vim
    neovim
    xwayland-satellite
-   xdg-desktop-portal
-   xdg-desktop-portal-hyprland
    lazygit
    nitch
    fastfetch
