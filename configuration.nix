@@ -14,13 +14,8 @@
 
   time.timeZone = "America/Mexico_City";
 
-  programs.hyprland = {
-   enable = true;
-   xwayland.enable = true;
-  };
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
-
   programs.niri = {
    enable = true;
   };
