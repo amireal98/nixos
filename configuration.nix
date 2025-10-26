@@ -49,14 +49,12 @@
 
   environment.systemPackages = with pkgs; [
    vim
-   helix
    neovim
    xwayland-satellite
    lazygit
    nitch
    fastfetch
    kitty
-   ghostty
    waybar
    swww
    nautilus
@@ -70,11 +68,12 @@
    onefetch
    yazi
    yaziPlugins.starship
+   vesktop
   ];
 
   fonts.packages = with pkgs; [
    nerd-fonts.jetbrains-mono
-   scientifica
+   maple-mono.NF
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
