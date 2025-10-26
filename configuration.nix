@@ -21,6 +21,10 @@
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
 
+  programs.niri = {
+   enable = true;
+  };
+
   users.users.amireal = {
    isNormalUser = true;
    extraGroups = [ "wheel" ];
