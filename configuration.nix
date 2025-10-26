@@ -71,6 +71,7 @@
    vesktop
    magnetic-catppuccin-gtk
    catppuccin-cursors
+   flatpak
   ];
 
   fonts.packages = with pkgs; [
