@@ -72,6 +72,7 @@
    magnetic-catppuccin-gtk
    catppuccin-cursors
    gnome-boxes
+   kvmtool
   ];
 
   fonts.packages = with pkgs; [
