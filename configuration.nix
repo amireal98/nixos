@@ -69,6 +69,7 @@
    yazi
    yaziPlugins.starship
    vesktop
+   magnetic-catppuccin-gtk
   ];
 
   fonts.packages = with pkgs; [
