@@ -79,6 +79,7 @@
    magnetic-catppuccin-gtk
    catppuccin-cursors
    cartridges
+   catppuccin-gtk
   ];
 
   fonts.packages = with pkgs; [
