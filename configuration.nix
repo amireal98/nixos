@@ -78,7 +78,7 @@
    vesktop
    magnetic-catppuccin-gtk
    catppuccin-cursors
-   lutris-free
+   cartridges
   ];
 
   fonts.packages = with pkgs; [
