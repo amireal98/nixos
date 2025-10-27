@@ -20,11 +20,6 @@
    "amdgpu"
    "nvidia"
   ];
-  hardware.nvidia.prime = {
-   sync.enable = true;
-   nvidiaBusId = "PCI:1:00.0";
-   amdgpuBusId = "PCI:7:00.0";
-  };
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
