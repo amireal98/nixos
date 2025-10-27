@@ -98,6 +98,7 @@
    lutris
    wine
    alacritty
+   zellij
   ];
 
   fonts.packages = with pkgs; [
