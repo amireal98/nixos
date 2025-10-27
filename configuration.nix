@@ -75,7 +75,6 @@
    nitch
    fastfetch
    kitty
-   ghostty
    waybar
    swww
    nautilus
@@ -85,13 +84,13 @@
    adwaita-icon-theme
    gemini-cli
    ollama
-   vscodium
    onefetch
    yazi
    yaziPlugins.starship
    vesktop
    magnetic-catppuccin-gtk
    neofetch
+   lutris
   ];
 
   fonts.packages = with pkgs; [
