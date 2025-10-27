@@ -96,6 +96,7 @@
    magnetic-catppuccin-gtk
    neofetch
    lutris
+   wine
   ];
 
   fonts.packages = with pkgs; [
