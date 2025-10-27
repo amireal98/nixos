@@ -80,6 +80,7 @@
    nitch
    fastfetch
    kitty
+   ghostty
    waybar
    swww
    nautilus
@@ -97,9 +98,7 @@
    neofetch
    lutris
    wine
-   alacritty
    zellij
-   cozette
   ];
 
   fonts.packages = with pkgs; [
