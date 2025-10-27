@@ -16,11 +16,6 @@
 
   time.timeZone = "America/Mexico_City";
 
-  services.xserver.videoDrivers = [
-   "amdgpu"
-   "nvidia"
-  ];
-
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
   programs.niri = {
