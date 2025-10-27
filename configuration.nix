@@ -97,7 +97,7 @@
    neofetch
    lutris
    wine
-   hyprlock
+   alacritty
   ];
 
   fonts.packages = with pkgs; [
