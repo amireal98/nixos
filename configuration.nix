@@ -16,6 +16,16 @@
 
   time.timeZone = "America/Mexico_City";
 
+  hardware.opengl = {
+   enable = true;
+   driSupport = true;
+   driSupport = true;
+  };
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia = {
+   modesettings.enable = true;
+  };
+
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
   programs.niri = {
