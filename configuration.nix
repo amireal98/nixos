@@ -16,7 +16,15 @@
 
   time.timeZone = "America/Mexico_City";
 
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
+  services.xserver.videoDrivers = [
+   "modesetting"
+   "nvidia"
+  ];
+  hardware.nvidia.prime = {
+   sync.enable = true;
+   nvidiaBusId = "PCI:01:00.0";
+   amdgpuBusId = "PCI:07:00.0";
+  };
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
