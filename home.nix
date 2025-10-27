@@ -24,7 +24,7 @@ in
   shellAliases = {
    btw = "echo I use NixOS, btw";
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
-   l = "tree";
+   l = "ls -la";
    gitp = "onefetch && git push -u origin main";
   };
  };
