@@ -99,6 +99,7 @@
    wine
    alacritty
    zellij
+   cozzette
   ];
 
   fonts.packages = with pkgs; [
