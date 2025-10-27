@@ -67,7 +67,7 @@
   };
 
   permittedInsecurePackages = [
-   "mbedtls-2.28.10"
+   "mbedtls-2.28.10";
   ];
 
   environment.systemPackages = with pkgs; [
