@@ -5,6 +5,7 @@ let
  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
  configs = {
   kitty = "kitty";
+  ghostty = "ghostty";
   waybar = "waybar";
   niri = "niri";
   hypr = "hypr";
