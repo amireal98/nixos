@@ -91,6 +91,7 @@
    magnetic-catppuccin-gtk
    neofetch
    lutris
+   mbedtls_2
   ];
 
   fonts.packages = with pkgs; [
