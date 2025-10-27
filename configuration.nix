@@ -22,8 +22,8 @@
   ];
   hardware.nvidia.prime = {
    sync.enable = true;
-   nvidiaBusId = "PCI:01:00.0";
-   amdgpuBusId = "PCI:07:00.0";
+   nvidiaBusId = "PCI:1:00.0";
+   amdgpuBusId = "PCI:7:00.0";
   };
 
   services.displayManager.ly.enable = true;
@@ -87,7 +87,7 @@
    yaziPlugins.starship
    vesktop
    magnetic-catppuccin-gtk
-   cartridges
+   neofetch
   ];
 
   fonts.packages = with pkgs; [
