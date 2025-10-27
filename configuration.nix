@@ -94,7 +94,6 @@
    yazi
    yaziPlugins.starship
    vesktop
-   magnetic-catppuccin-gtk
    neofetch
    lutris
    wine

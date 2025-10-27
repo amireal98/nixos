@@ -1,0 +1,4 @@
+theme = GruvboxDark
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+gtk-titlebar = false
