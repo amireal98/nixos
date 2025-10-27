@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./nvidia.nix
+      ./gpu.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
