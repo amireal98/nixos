@@ -17,7 +17,7 @@
   time.timeZone = "America/Mexico_City";
 
   services.xserver.videoDrivers = [
-   "modesetting"
+   "amdgpu"
    "nvidia"
   ];
   hardware.nvidia.prime = {
