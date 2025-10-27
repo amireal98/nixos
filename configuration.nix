@@ -90,7 +90,7 @@
    vesktop
    magnetic-catppuccin-gtk
    neofetch
-   bottles
+   lutris
   ];
 
   fonts.packages = with pkgs; [
