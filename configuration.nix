@@ -6,7 +6,13 @@
       ./hardware-configuration.nix
     ];
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+   allowUnfree = true;
+   permittedInsecurePackages = [
+    "mbedtls_2"
+    "mbedtls-2.28.10"
+   ];
+  };
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -65,10 +71,6 @@
   programs.steam = {
    enable = true;
   };
-
-  permittedInsecurePackages = [
-   "mbedtls-2.28.10";
-  ];
 
   environment.systemPackages = with pkgs; [
    vim
