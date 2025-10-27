@@ -22,9 +22,7 @@
    driSupport32Bit = true;
   };
   services.xserver.videoDrivers = ["nvidia"];
-  hardware.nvidia = {
-   modesettings.enable = true;
-  };
+  hardware.nvidia.modesettings.enable = true;
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
