@@ -4,7 +4,6 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./gpu.nix
     ];
 
   nixpkgs.config.allowUnfree = true;
@@ -16,6 +15,8 @@
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Mexico_City";
+
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
