@@ -20,6 +20,14 @@
   hardware.nvidia = {
    open = true;
    modesetting.enable = true;
+   prime = {
+    offload = {
+     enable = true;
+     enableOffLoadCmd = true;
+    };
+    amdgpuBusId = "PCI:07:00:0";
+    nvidiaBusId = "PCI:01:00:0";
+   };
   };
 
   services.displayManager.ly.enable = true;
