@@ -22,6 +22,7 @@
    driSupport32Bit = true;
   };
   services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia.open = true
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
