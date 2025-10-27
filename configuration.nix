@@ -90,6 +90,7 @@
    vesktop
    magnetic-catppuccin-gtk
    neofetch
+   bottles
   ];
 
   fonts.packages = with pkgs; [
