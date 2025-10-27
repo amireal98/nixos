@@ -16,7 +16,7 @@
 
   time.timeZone = "America/Mexico_City";
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
   hardware.nvidia = {
    open = true;
   };
