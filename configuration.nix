@@ -89,7 +89,7 @@
    swww
    nautilus
    nwg-look
-   rofi-wayland
+   rofi
    brightnessctl
    adwaita-icon-theme
    magnetic-catppuccin-gtk
