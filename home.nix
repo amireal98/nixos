@@ -8,6 +8,7 @@ let
   ghostty = "ghostty";
   waybar = "waybar";
   hypr = "hypr";
+  niri = "niri";
  };
 in
 

@@ -42,6 +42,9 @@
    enable = true;
    xwayland.enable = true;
   };
+  programs.niri = {
+   enable = true;
+  };
 
   users.users.amireal = {
    isNormalUser = true;
