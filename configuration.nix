@@ -108,7 +108,6 @@
 
   fonts.packages = with pkgs; [
    nerd-fonts.jetbrains-mono
-   nerd-fonts.envy-code-r
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
