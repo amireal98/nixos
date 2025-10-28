@@ -80,6 +80,7 @@
    nitch
    fastfetch
    kitty
+   kitty-img
    ghostty
    waybar
    swww
