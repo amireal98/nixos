@@ -43,7 +43,7 @@
   };
   programs.hyprland = {
    enable = true;
-   enable.xwayland = true;
+   xwayland.enable = true;
   };
 
   users.users.amireal = {
