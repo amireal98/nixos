@@ -1,4 +1,4 @@
-theme = rose-pine
+theme = catppuccin-mocha
 font-family = Maple Mono NF
 font-size = 14
 gtk-titlebar = false

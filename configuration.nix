@@ -98,6 +98,7 @@
    lutris
    wine
    zellij
+   magnetic-catppuccin-gtk
   ];
 
   fonts.packages = with pkgs; [
