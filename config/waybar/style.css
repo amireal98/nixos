@@ -7,17 +7,15 @@
 }
 
 window#waybar {
-    background: rgb(43, 48, 59);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: white;
-}
+    background: rgb(30, 30, 46);
+   }
 
 tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
+  background: rgb(24, 24, 37);
+  border: 1px solid rgb(203, 166, 247);
 }
 tooltip label {
-  color: white;
+  color: rgb(17, 17, 27);
 }
 
 #workspaces button {
@@ -28,8 +26,8 @@ tooltip label {
 }
 
 #workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
+    background: #313244;
+    border-bottom: 3px solid #cba6f7;
 }
 
 #mode, #clock, #battery {
