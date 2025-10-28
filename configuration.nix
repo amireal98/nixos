@@ -100,6 +100,7 @@
    gamemode
    ncspot
    cava
+   nerdfetch
   ];
 
   fonts.packages = with pkgs; [
