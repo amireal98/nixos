@@ -9,6 +9,7 @@ let
   waybar = "waybar";
   hypr = "hypr";
   niri = "niri";
+  yazi = "yazi";
  };
 in
 
