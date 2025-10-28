@@ -85,6 +85,7 @@
    kitty
    kitty-img
    ghostty
+   xwayland-sattelite
    waybar
    swww
    nautilus
