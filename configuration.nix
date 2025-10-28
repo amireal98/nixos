@@ -96,7 +96,7 @@
    vesktop
    lutris
    wine
-   magnetic-catppuccin-gtk
+   gruvbox-dark-gtk
    gamemode
    ncspot
    cava
