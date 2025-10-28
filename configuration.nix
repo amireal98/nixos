@@ -98,6 +98,8 @@
    magnetic-catppuccin-gtk
    gamemode
    ncspot
+   cava
+   quickshell
   ];
 
   fonts.packages = with pkgs; [
