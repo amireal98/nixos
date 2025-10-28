@@ -89,6 +89,7 @@
    rofi-wayland
    brightnessctl
    adwaita-icon-theme
+   magnetic-catppuccin-gtk
    gemini-cli
    ollama
    onefetch
@@ -96,7 +97,6 @@
    vesktop
    lutris
    wine
-   rose-pine-gtk-theme
    gamemode
    ncspot
    cava
