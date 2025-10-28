@@ -96,8 +96,7 @@
    vesktop
    lutris
    wine
-   gruvbox-dark-gtk
-   gruvbox-gtk-theme
+   rose-pine-gtk-theme
    gamemode
    ncspot
    cava
