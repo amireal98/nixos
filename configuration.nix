@@ -100,6 +100,7 @@
    zellij
    magnetic-catppuccin-gtk
    gamemode
+   ncspot
   ];
 
   fonts.packages = with pkgs; [
