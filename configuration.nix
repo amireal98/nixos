@@ -108,7 +108,7 @@
   ];
 
   fonts.packages = with pkgs; [
-   maple-mono.NF
+   nerd-fonts.jetbrains-mono
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
