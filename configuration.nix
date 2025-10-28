@@ -99,6 +99,7 @@
    wine
    zellij
    magnetic-catppuccin-gtk
+   gamemode
   ];
 
   fonts.packages = with pkgs; [
