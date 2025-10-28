@@ -41,6 +41,10 @@
   programs.niri = {
    enable = true;
   };
+  programs.hyprland = {
+   enable = true;
+   xwayland = true;
+  };
 
   users.users.amireal = {
    isNormalUser = true;
