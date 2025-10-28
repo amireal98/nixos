@@ -99,7 +99,6 @@
    gamemode
    ncspot
    cava
-   quickshell
   ];
 
   fonts.packages = with pkgs; [
