@@ -38,9 +38,6 @@
 
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
-  programs.niri = {
-   enable = true;
-  };
   programs.hyprland = {
    enable = true;
    xwayland.enable = true;
@@ -79,7 +76,6 @@
   environment.systemPackages = with pkgs; [
    vim
    neovim
-   xwayland-satellite
    lazygit
    nitch
    fastfetch
@@ -96,12 +92,9 @@
    ollama
    onefetch
    yazi
-   yaziPlugins.starship
    vesktop
-   neofetch
    lutris
    wine
-   zellij
    magnetic-catppuccin-gtk
    gamemode
    ncspot
