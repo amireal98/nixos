@@ -1,4 +1,4 @@
 theme = catppuccin-mocha
-font-family = Maple Mono NF
-font-size = 14
+font-family = JetBrainsMono Nerd Font
+font-size = 16
 gtk-titlebar = false
