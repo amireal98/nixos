@@ -97,6 +97,7 @@
    lutris
    wine
    gruvbox-dark-gtk
+   gruvbox-gtk-theme
    gamemode
    ncspot
    cava
