@@ -105,7 +105,6 @@
    gamemode
    ncspot
    cava
-   nerdfetch
    hyprlock
    figlet
    obsidian
@@ -114,6 +113,7 @@
    power-profiles-daemon
    playerctl
    zed-editor
+   vscodium
    neofetch
   ];
 

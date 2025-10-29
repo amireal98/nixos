@@ -1,5 +1,5 @@
 theme = Catppuccin Mocha
 background-opacity = 1.0
-font-family = CaskaydiaCove Nerd Font
+font-family = Maple Mono NF
 font-size = 13
 gtk-titlebar = false
