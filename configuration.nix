@@ -108,17 +108,17 @@
    nerdfetch
    hyprlock
    figlet
+   obsidian
+   shc
   ];
 
   fonts.packages = with pkgs; [
-   nerd-fonts.jetbrains-mono
-   nerd-fonts.envy-code-r
    nerd-fonts.caskaydia-cove
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  system.stateVersion = "25.05"; # DONT TOUCH
+  system.stateVersion = "25.05"; # Dont touch plz
 
 }
 
