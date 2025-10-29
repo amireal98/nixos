@@ -110,7 +110,9 @@
    figlet
    obsidian
    shc
-   ungoogled-chromium
+   chromium
+   power-profiles-daemon
+   playerctl
   ];
 
   fonts.packages = with pkgs; [
