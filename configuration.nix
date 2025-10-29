@@ -79,6 +79,7 @@
   environment.systemPackages = with pkgs; [
    vim
    neovim
+   helix
    lazygit
    nitch
    fastfetch
