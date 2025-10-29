@@ -10,6 +10,7 @@ let
   hypr = "hypr";
   niri = "niri";
   yazi = "yazi";
+  neofetch = "neofetch";
  };
 in
 
