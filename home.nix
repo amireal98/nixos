@@ -11,6 +11,7 @@ let
   niri = "niri";
   yazi = "yazi";
   neofetch = "neofetch";
+  helix = "helix";
  };
 in
 
