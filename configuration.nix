@@ -62,16 +62,22 @@
     init.defaultBranch = "main";
    };
   };
-
   programs.starship = {
    enable = true;
    presets = [
     "nerd-font-symbols"
    ];
   };
+  environment = {
+   shells = [ pkgs.bash ];
+   variables = {
+    EDITOR = "hx";
+    SYSTEMD_EDITOR = "hx";
+    VISUAL = "hx";
+   };
+  };
   
   programs.firefox.enable = true;
-
   programs.steam = {
    enable = true;
   };
