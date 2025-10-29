@@ -106,6 +106,7 @@
    ncspot
    cava
    nerdfetch
+   hyprlock
   ];
 
   fonts.packages = with pkgs; [
