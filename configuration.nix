@@ -107,6 +107,7 @@
    cava
    nerdfetch
    hyprlock
+   figlet
   ];
 
   fonts.packages = with pkgs; [
