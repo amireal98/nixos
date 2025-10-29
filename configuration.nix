@@ -113,6 +113,7 @@
    chromium
    power-profiles-daemon
    playerctl
+   zed-editor
   ];
 
   fonts.packages = with pkgs; [
