@@ -114,6 +114,7 @@
    power-profiles-daemon
    playerctl
    zed-editor
+   neofetch
   ];
 
   fonts.packages = with pkgs; [

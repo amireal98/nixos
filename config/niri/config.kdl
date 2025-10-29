@@ -14,7 +14,7 @@ input {
     }
 }
 
-/-output "eDP-1" {
+output "eDP-1" {
     mode "1920x1080@62"
     scale 1
     transform "normal"
@@ -22,26 +22,29 @@ input {
 }
 
 layout {
-    gaps 16
+    gaps 8
     center-focused-column "never"
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
+        proportion 0.9
     }
+    
     default-column-width { proportion 0.5; }
+    
     focus-ring {
         width 2
         active-color "#cba6f7"
-        inactive-color "#45475a"
+        inactive-color "#6c7086"
     }
 
     border {
         off
-        width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
+        width 2
+        active-color "#cba6f7"
+        inactive-color "#000000"
+        urgent-color "#000000"
     }
 
     shadow {
@@ -52,6 +55,7 @@ layout {
     }
 
     struts {
+
     }
 }
 
@@ -60,16 +64,15 @@ spawn-at-startup "swww-daemon"
 // spawn-sh-at-startup "something"
 
 hotkey-overlay {
+    
 }
+
+prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
-}
 
-window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
 }
 
 window-rule {
@@ -77,15 +80,7 @@ window-rule {
     open-floating true
 }
 
-
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-}
-
-/-window-rule {
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
