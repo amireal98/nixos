@@ -110,6 +110,7 @@
    figlet
    obsidian
    shc
+   ungoogled-chromium
   ];
 
   fonts.packages = with pkgs; [
