@@ -119,6 +119,7 @@
 
   fonts.packages = with pkgs; [
    nerd-fonts.caskaydia-cove
+   maple-mono.NF
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
