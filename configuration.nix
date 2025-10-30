@@ -92,6 +92,7 @@
    kitty
    kitty-img
    ghostty
+   alacritty
    xwayland-satellite
    waybar
    swww
