@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 
+# Dotfiles and configs
 let
  dotfiles = "${config.home.homeDirectory}/nixos-dots/config";
  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
@@ -16,6 +17,7 @@ let
  };
 in
 
+# User
 {
  home.username = "amireal";
  home.homeDirectory = "/home/amireal";
@@ -29,6 +31,7 @@ in
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
    l = "ls -l";
    gitp = "onefetch && git push -u origin main";
+   y = "yazi";
   };
  };
 
@@ -37,6 +40,5 @@ in
    source = create_symlink "${dotfiles}/${subpath}";
    recursive = true;
   }) configs;
-
 }
 
