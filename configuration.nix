@@ -116,7 +116,6 @@
    figlet
    obsidian
    shc
-   chromium
    power-profiles-daemon
    playerctl
    zed-editor
