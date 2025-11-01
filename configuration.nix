@@ -118,7 +118,7 @@
    shc
    power-profiles-daemon
    playerctl
-   zed-editor
+   zellij
    vscodium
    neofetch
   ];
