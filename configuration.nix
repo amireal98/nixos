@@ -120,6 +120,8 @@
    zellij
    vscodium
    neofetch
+   youtube-music
+   youtube-tui
   ];
 
   fonts.packages = with pkgs; [
