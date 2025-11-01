@@ -122,6 +122,7 @@
    neofetch
    youtube-music
    youtube-tui
+   heroic
   ];
 
   fonts.packages = with pkgs; [
