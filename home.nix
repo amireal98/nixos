@@ -12,6 +12,7 @@ let
   yazi = "yazi";
   neofetch = "neofetch";
   helix = "helix";
+  zellij = "zellij";
  };
 in
 
@@ -25,7 +26,6 @@ in
  programs.bash = {
   enable = true;
   shellAliases = {
-   btw = "echo I use NixOS, btw";
    nrs = "sudo nixos-rebuild switch --flake ~/nixos-dots#nixos-btw";
    l = "ls -l";
    gitp = "onefetch && git push -u origin main";
