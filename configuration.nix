@@ -123,7 +123,7 @@
    youtube-music
    youtube-tui
    heroic
-   protonup
+   protonplus
   ];
 
   fonts.packages = with pkgs; [
