@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./stylix/stylix.nix
     ];
 
   nixpkgs.config = {
