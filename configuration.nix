@@ -96,11 +96,8 @@
    waybar
    swww
    nautilus
-   nwg-look
    rofi
    brightnessctl
-   adwaita-icon-theme
-   magnetic-catppuccin-gtk
    gemini-cli
    ollama
    onefetch
