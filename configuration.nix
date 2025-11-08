@@ -44,7 +44,6 @@
 
   environment.systemPackages = with pkgs; [
    vim
-   wget
    nitch
    fastfetch
    kitty
@@ -52,6 +51,9 @@
    gh
    lazygit
    swww
+
+   qmk
+   via
   ];
 
   fonts.packages = with pkgs; [
