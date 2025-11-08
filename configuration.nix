@@ -58,6 +58,7 @@
    hid-tools
    hidapi
 
+   vscodium
    chromium
   ];
 
