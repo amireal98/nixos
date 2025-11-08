@@ -44,11 +44,12 @@
 
   environment.systemPackages = with pkgs; [
    vim
+   gh
    nitch
    fastfetch
+ 
    kitty
    waybar
-   gh
    lazygit
    swww
 
@@ -56,6 +57,8 @@
    via
    hid-tools
    hidapi
+
+   chromium
   ];
 
   fonts.packages = with pkgs; [
