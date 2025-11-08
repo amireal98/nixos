@@ -40,7 +40,12 @@
    };
   };
 
-  programs.firefox.enable = true;
+  nixpkgs.config = {
+   allowUnfree = true;
+   permittedInsecurePackages = [
+    "mbedtls_2"
+   ];
+  };
 
   environment.systemPackages = with pkgs; [
    vim
@@ -60,6 +65,8 @@
 
    vscode
    chromium
+   firefox
+   lutris
   ];
 
   fonts.packages = with pkgs; [
