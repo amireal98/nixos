@@ -49,8 +49,8 @@
    fastfetch
    kitty
    waybar
-   git
    gh
+   lazygit
    swww
   ];
 
