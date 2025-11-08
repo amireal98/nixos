@@ -54,6 +54,8 @@
 
    qmk
    via
+   hid-tools
+   hidapi
   ];
 
   fonts.packages = with pkgs; [
