@@ -18,9 +18,10 @@
    enable = true;
    xwayland.enable = true;
   };
-
+  programs.niri = {
+    enable = true;
+  };
   services.displayManager.ly.enable = true;
-
   services.libinput.enable = true;
 
   users.users.amireal = {
@@ -49,26 +50,34 @@
   };
 
   environment.systemPackages = with pkgs; [
-   vim
-   gh
-   nitch
-   fastfetch
+    # Tui
+    vim
+    gh
+    nitch
+    fastfetch
  
-   kitty
-   waybar
-   lazygit
-   swww
+    # Niri
+    kitty
+    waybar
+    lazygit
+    swww
+    nirius
+    brightnessctl
+    playerctl
+    xwayland-satellite
 
-   qmk
-   via
-   hid-tools
-   hidapi
+    # Keyboard
+    qmk
+    via
+    hid-tools
+    hidapi
 
-   vscode
-   firefox
-   lutris
-   speedcrunch
-   nautilus
+    # Apps
+    vscode
+    firefox
+    lutris
+    speedcrunch
+    nautilus
   ];
 
   fonts.packages = with pkgs; [
