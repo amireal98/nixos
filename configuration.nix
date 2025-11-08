@@ -65,9 +65,9 @@
    hidapi
 
    vscode
-   chromium
    firefox
    lutris
+   speedcrunch
   ];
 
   fonts.packages = with pkgs; [
