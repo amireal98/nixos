@@ -44,6 +44,7 @@
    allowUnfree = true;
    permittedInsecurePackages = [
     "mbedtls_2"
+    "mbedtls-2.28.10"
    ];
   };
 
