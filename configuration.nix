@@ -61,7 +61,6 @@
     waybar
     lazygit
     swww
-    nirius
     brightnessctl
     playerctl
     xwayland-satellite
