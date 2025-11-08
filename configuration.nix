@@ -58,7 +58,7 @@
    hid-tools
    hidapi
 
-   vscodium
+   vscode
    chromium
   ];
 
