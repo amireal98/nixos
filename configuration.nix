@@ -68,6 +68,7 @@
    firefox
    lutris
    speedcrunch
+   nautilus
   ];
 
   fonts.packages = with pkgs; [
