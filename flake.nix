@@ -22,6 +22,7 @@
     modules = [
       ./configuration.nix
       home-manager.nixosModules.home-manager
+      zen-browser.homeModules.beta
       {
       home-manager = {
         useGlobalPkgs = true;
