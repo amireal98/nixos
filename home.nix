@@ -1,9 +1,19 @@
-{ config, pkgs, ... }:
+{ 
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 
 {
 
  imports = [
-  ./modules/home-manager/dots.nix
+    # Nix files
+    ./modules/home-manager/dots.nix
+
+    # Inputs
+    inputs.zen-browser.homeModules.beta
  ];
 
  home.username = "amireal";
