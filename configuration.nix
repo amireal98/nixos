@@ -3,17 +3,19 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ./hardware-configuration.nix # Dont touch this file or everything will implode
     ];
 
+  # Stytemd bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Host name and NetworkManager
   networking.hostName = "woof";
   networking.networkmanager.enable = true;
-
   time.timeZone = "America/Mexico_City";
 
+  # Gpu settings & Nvidia prime
   services.xserver.videoDrivers = ["nvidia" "amdgpu"];
   hardware.nvidia = {
     open = true;
@@ -28,6 +30,7 @@
    };
   };
 
+  # Window manager (Niri) & Display manager (Ly)
   programs.hyprland = {
    enable = true;
    xwayland.enable = true;
@@ -38,6 +41,7 @@
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
 
+  # User (me) and git
   users.users.amireal = {
    isNormalUser = true;
    extraGroups = [ "wheel" ];
@@ -45,7 +49,6 @@
     tree
    ];
   };
-
   programs.git = {
    enable = true;
    config = {
@@ -55,6 +58,7 @@
    };
   };
 
+  # Nixpkgs
   nixpkgs.config = {
    allowUnfree = true;
    permittedInsecurePackages = [
@@ -62,7 +66,6 @@
     "mbedtls-2.28.10"
    ];
   };
-
   environment.systemPackages = with pkgs; [
     # Tui
     vim
@@ -93,14 +96,14 @@
     nautilus
     steam
   ];
-
   fonts.packages = with pkgs; [
-   nerd-fonts.jetbrains-mono
+   nerd-fonts.caskaydia-cove
   ];
 
+  # Nix commands & Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  system.stateVersion = "25.05"; # DONT TOUCH
+  system.stateVersion = "25.05"; # Dont touch or everything will explode
 
 }
 
