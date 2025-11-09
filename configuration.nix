@@ -14,6 +14,20 @@
 
   time.timeZone = "America/Mexico_City";
 
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
+  hardware.nvidia = {
+    open = true;
+    modesetting.enable = true;
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+    amdgpuBusId = "PCI:07:00:0";
+    nvidiaBusId = "PCI:01:00:0";
+   };
+  };
+
   programs.hyprland = {
    enable = true;
    xwayland.enable = true;
