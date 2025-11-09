@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -105,7 +105,7 @@
     vscode # I dont wanted telemetry, but i needed that Ridiculous Coding addon
     firefox # Fox are canids also
     lutris # Yay
-    speedcrunch # I hate Batiz / Odio Batiz
+    speedcrunch # Odio Batiz, saquenme de Batiz
     nautilus # Files
     steam # Yay x2
   ];
