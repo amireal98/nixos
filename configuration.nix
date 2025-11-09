@@ -77,6 +77,7 @@
     lutris
     speedcrunch
     nautilus
+    steam
   ];
 
   fonts.packages = with pkgs; [
