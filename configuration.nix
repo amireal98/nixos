@@ -10,10 +10,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Host name and NetworkManager
+  # Hostname, NetworkManager and localization
   networking.hostName = "woof";
   networking.networkmanager.enable = true;
   time.timeZone = "America/Mexico_City";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   # Gpu settings & Nvidia prime
   services.xserver.videoDrivers = ["nvidia" "amdgpu"];
@@ -28,6 +29,17 @@
     amdgpuBusId = "PCI:07:00:0";
     nvidiaBusId = "PCI:01:00:0";
    };
+  };
+
+  # Audio
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+    jack.enable = true;
+    wireplumber.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
   };
 
   # Window manager (Niri) & Display manager (Ly)
@@ -62,8 +74,8 @@
   nixpkgs.config = {
    allowUnfree = true;
    permittedInsecurePackages = [
-    "mbedtls_2"
-    "mbedtls-2.28.10"
+    "mbedtls_2" # Required for lutris
+    "mbedtls-2.28.10" # Also required for lutris
    ];
   };
   environment.systemPackages = with pkgs; [
