@@ -81,6 +81,7 @@
     brightnessctl
     playerctl
     xwayland-satellite
+    rofi
 
     # Keyboard
     qmk
