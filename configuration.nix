@@ -101,12 +101,6 @@
     xwayland-satellite # X programs in wayland for niri
     rofi # App launcher
 
-    # Keyboard
-    qmk
-    via
-    hid-tools
-    hidapi
-
     # Apps
     vscode # I dont wanted telemetry, but i needed that Ridiculous Coding addon
     firefox # Fox are canids also

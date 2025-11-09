@@ -11,6 +11,7 @@ let
  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
  configs = {
   git = "git";
+  niri = "niri";
  };
 in
 
