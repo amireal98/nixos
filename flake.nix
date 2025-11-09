@@ -19,7 +19,6 @@
  outputs = { self, nixpkgs, home-manager, ... }: {
    nixosConfigurations.woof = nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
-    specialArgs = {inherit inputs outputs;};
     modules = [
       ./configuration.nix
       home-manager.nixosModules.home-manager
