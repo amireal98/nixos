@@ -19,13 +19,13 @@
   # Hostname, NetworkManager and localization
   networking.hostName = "woof"; # Any problem with it?
   networking.networkmanager.enable = true;
-  time.timeZone = "America/Mexico_City"; # Tacos
-  i18n.defaultLocale = "en_US.UTF-8"; # Bang bang
+  time.timeZone = "America/Mexico_City";
+  i18n.defaultLocale = "en_US.UTF-8";
 
-  # Gpu settings & Nvidia prime
-  services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # The dedicated and integrated graphics drivers
+  # Graphics
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
   hardware.nvidia = {
-    open = true; # I love open source, fuck nvidia
+    open = true;
     modesetting.enable = true;
     prime = {
       offload = {
@@ -48,16 +48,12 @@
     alsa.support32Bit = true;
   };
 
-  # Window manager (Niri) & Display manager (Ly)
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  # Window manager
   programs.niri = { # Niri my beloved
     enable = true;
   };
   services.displayManager.ly.enable = true; # Ly display manager
-  services.libinput.enable = true; # Trackpad
+  services.libinput.enable = true; # Trackpad enabled
 
   # User (me) and git
   users.users.amireal = { # Thats me :D
@@ -78,7 +74,7 @@
 
   # Nixpkgs
   nixpkgs.config = {
-    allowUnfree = true; # Not open source D:
+    allowUnfree = true; # Allow not open source packages
     permittedInsecurePackages = [
       "mbedtls_2" # Required for lutris
       "mbedtls-2.28.10" # Also required for lutris
@@ -90,24 +86,26 @@
     gh # Github
     nitch # I use NixOs btw
     fastfetch # I use NixOs btw
+    yazi # Terminal file manager
+    lazygit # Im to lazy to use git cli
+    tmux # Terminal multiplexer
  
     # Niri
-    kitty # Kitty term my beloved
+    kitty # Kitty terminal my beloved
     waybar # A bar in wayland
-    lazygit # Im to lazy to use git cli
-    swww # Wallpaper
+    swww # Animated wallpapers
     brightnessctl # I can/cant see anything
     playerctl # Pause and play
     xwayland-satellite # X programs in wayland for niri
     rofi # App launcher
 
     # Apps
-    vscode # I dont wanted telemetry, but i needed that Ridiculous Coding addon
-    firefox # Fox are canids also
-    lutris # Yay
+    vscode
+    firefox
+    lutris
     speedcrunch # Odio Batiz, saquenme de Batiz
-    nautilus # Files
-    steam # Yay x2
+    nautilus # Gui file manager
+    steam
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
