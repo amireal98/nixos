@@ -16,7 +16,11 @@
 
  };
 
- outputs = { self, nixpkgs, home-manager, ... }: {
+ outputs = { 
+  self, 
+  nixpkgs, 
+  home-manager, 
+  ... }: {
    nixosConfigurations.woof = nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
