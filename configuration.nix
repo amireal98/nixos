@@ -12,9 +12,13 @@
       ./hardware-configuration.nix # Dont touch this file or everything will implode
     ];
 
-  # Stytemd bootloader
-  boot.loader.systemd-boot.enable = true;
+  # Systemd and limine bootloader
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.limine = {
+    enable = true;
+    efiSupport = true;
+  };
 
   # Hostname, NetworkManager and localization
   networking.hostName = "woof"; # Any problem with it?
