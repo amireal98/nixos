@@ -1,15 +1,11 @@
-{ 
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}:
+{ inputs, lib, config, pkgs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix # Dont touch this file or everything will implode
+
+      ./modules/nixos/stylix.nix
     ];
 
   # Limine bootloader
@@ -113,8 +109,6 @@
     nerd-fonts.jetbrains-mono # My favorite font
   ];
 
-  # Stylix
-  stylix.enable = true;
 
   # Some programs configs
   programs.steam = {
