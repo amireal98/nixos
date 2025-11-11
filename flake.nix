@@ -4,7 +4,12 @@
  inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
 
-   home-manager = {
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    home-manager = {
     url = "github:nix-community/home-manager";
     inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -14,12 +19,14 @@
  outputs = { 
   self, 
   nixpkgs, 
+  stylix, 
   home-manager, 
   ... }: {
    nixosConfigurations.woof = nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
       ./configuration.nix
+      stylix.nixosModules.stylix
       home-manager.nixosModules.home-manager
       {
       home-manager = {
