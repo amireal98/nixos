@@ -12,7 +12,7 @@
       ./hardware-configuration.nix # Dont touch this file or everything will implode
     ];
 
-  # Systemd and limine bootloader
+  # Limine bootloader
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.limine = {
     enable = true;
