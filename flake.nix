@@ -34,7 +34,7 @@
         useUserPackages = true;
         users.amireal = import ./home.nix;
         backupFileExtension = "backup";
-      };
+       };
       }
     ];
    };
