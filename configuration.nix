@@ -23,7 +23,7 @@
   networking.hostName = "woof"; # Any problem with it?
   networking.networkmanager.enable = true;
   time.timeZone = "America/Mexico_City";
-  i18n.defaultLocale = "en_US.UTF-8";
+  # i18n.defaultLocale = "en_US.UTF-8";
 
   # Graphics
   services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
