@@ -12,6 +12,7 @@ let
   configs = {
     git = "git";
     niri = "niri";
+    kitty = "kitty";
   };
 in
 
