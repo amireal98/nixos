@@ -101,6 +101,7 @@
     playerctl # Pause and play
     xwayland-satellite # X programs in wayland for niri
     rofi # App launcher
+    gamemode
 
     # Apps
     vscode
@@ -108,11 +109,15 @@
     lutris
     speedcrunch # Odio Batiz, saquenme de Batiz
     nautilus # Gui file manager
-    steam
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
   ];
+
+  # Some programs configs
+  programs.steam = {
+    enable = true;
+  };
 
   # Essential Nixos & Nix features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
