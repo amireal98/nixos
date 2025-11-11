@@ -114,7 +114,7 @@
   ];
 
   # Stylix
-  stylix.enable
+  stylix.enable = true;
 
   # Some programs configs
   programs.steam = {
