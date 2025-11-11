@@ -113,6 +113,9 @@
     nerd-fonts.jetbrains-mono # My favorite font
   ];
 
+  # Stylix
+  stylix.enable
+
   # Some programs configs
   programs.steam = {
     enable = true;
