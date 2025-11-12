@@ -112,7 +112,7 @@
     nautilus # Gui file manager
   ];
   fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono # My favorite font
+    nerd-fonts.caskaydia-cove # My favorite font
   ];
 
 
