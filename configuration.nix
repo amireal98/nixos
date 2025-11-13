@@ -117,6 +117,9 @@
     lutris
     speedcrunch # Odio Batiz, saquenme de Batiz
     nautilus # Gui file manager
+
+    # Develop
+    gcc
   ];
 
   fonts.packages = with pkgs; [
