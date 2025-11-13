@@ -13,7 +13,7 @@
     ./modules/home-manager/dots.nix
 
     # Inputs
-    inputs.zen-browser.homeModules.beta
+    # inputs.zen-browser.homeModules.beta
  ];
 
  home.username = "amireal";
