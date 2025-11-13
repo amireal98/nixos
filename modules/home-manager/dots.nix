@@ -14,6 +14,7 @@ let
     niri = "niri";
     hypr = "hypr";
     kitty = "kitty";
+    nvim = "nvim";
   };
 in
 
