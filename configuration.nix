@@ -11,7 +11,7 @@
     [
       ./hardware-configuration.nix # Dont touch this file or everything will implode
 
-      ./modules/nixos/stylix.nix
+      ./modules/nixos/stylix.nix # Theming
     ];
 
   # Limine bootloader
