@@ -91,7 +91,7 @@
   environment.systemPackages = with pkgs; [
     # Tui
     vim # Vim > Emacs
-    nvim
+    neovim
     gh # Github
     nitch # I use NixOs btw
     fastfetch # I use NixOs btw
