@@ -12,6 +12,7 @@ let
   configs = {
     git = "git";
     niri = "niri";
+    hypr = "hypr";
     kitty = "kitty";
   };
 in
