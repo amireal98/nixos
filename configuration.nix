@@ -53,6 +53,10 @@
   };
 
   # Window manager
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
   programs.niri = { # Niri my beloved
     enable = true;
   };
