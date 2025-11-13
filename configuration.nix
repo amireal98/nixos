@@ -91,12 +91,15 @@
   environment.systemPackages = with pkgs; [
     # Tui
     vim # Vim > Emacs
+    nvim
     gh # Github
     nitch # I use NixOs btw
     fastfetch # I use NixOs btw
     yazi # Terminal file manager
     lazygit # Im to lazy to use git cli
     tmux # Terminal multiplexer
+    cava
+    clock-rs
  
     # Niri
     kitty # Kitty terminal my beloved
@@ -115,6 +118,7 @@
     speedcrunch # Odio Batiz, saquenme de Batiz
     nautilus # Gui file manager
   ];
+
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
   ];
