@@ -119,6 +119,7 @@
     nautilus # Gui file manager
 
     # Develop
+    shc
     gcc
   ];
 
