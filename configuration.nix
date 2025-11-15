@@ -100,7 +100,7 @@
     cava
     clock-rs
  
-    # Niri
+    # Hyprland and niri
     kitty # Kitty terminal my beloved
     waybar # A bar in wayland
     swww # Animated wallpapers
@@ -108,7 +108,7 @@
     playerctl # Pause and play
     xwayland-satellite # X programs in wayland for niri
     rofi # App launcher
-    gamemode
+    gamemode # Optimization for games
 
     # Apps
     vscode
@@ -124,6 +124,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
+    nerd-fonts.jetbrains-mono
   ];
 
 
