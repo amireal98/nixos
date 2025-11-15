@@ -124,7 +124,6 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
-    nerd-fonts.jetbrains-mono
   ];
 
 
