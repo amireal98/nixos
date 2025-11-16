@@ -1,9 +1,4 @@
-{ 
-  lib,
-  config,
-  pkgs,
-  ...
-}:
+{  lib, config, pkgs, ... }:
 
 # Dotfiles
 let
@@ -16,12 +11,14 @@ let
     kitty = "kitty";
     nvim = "nvim";
   };
+
 in
 
 {
-    xdg.configFile = builtins.mapAttrs
-    (name: subpath: {
-        source = create_symlink "${dotfiles}/${subpath}";
-        recursive = true;
+  xdg.configFile = builtins.mapAttrs
+  (name: subpath: {
+    source = create_symlink "${dotfiles}/${subpath}";
+    recursive = true;
     }) configs;
+
 }

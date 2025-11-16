@@ -1,13 +1,7 @@
-{ 
-  lib,
-  config,
-  pkgs,
-  stylix,
-  ...
-}:
+{ lib, config, pkgs, stylix, ... }:
 
 {
-    stylix.targets = {
-        kitty.enable = true;
-    }
+  stylix.targets = {
+    kitty.enable = true;
+  };
 }
