@@ -50,9 +50,6 @@
     enable = true;
     xwayland.enable = true;
   };
-  programs.niri = { # Niri my beloved
-    enable = true;
-  };
   services.displayManager.ly.enable = true; # Ly display manager
   services.libinput.enable = true; # Trackpad enabled
 
@@ -83,48 +80,43 @@
   };
   environment.systemPackages = with pkgs; [
     # Tui
-    vim # Vim > Emacs
+    vim
     neovim
-    gh # Github
-    nitch # I use NixOs btw
-    fastfetch # I use NixOs btw
-    yazi # Terminal file manager
-    lazygit # Im to lazy to use git cli
-    tmux # Terminal multiplexer
+    gh
+    nitch
+    fastfetch
+    yazi
+    lazygit
+    tmux
     cava
-    clock-rs
+    peaclock
  
-    # Hyprland and niri
-    kitty # Kitty terminal my beloved
-    waybar # A bar in wayland
-    swww # Animated wallpapers
-    brightnessctl # I can/cant see anything
-    playerctl # Pause and play
-    xwayland-satellite # X programs in wayland for niri
-    rofi # App launcher
-    gamemode # Optimization for games
+    # Hyprland
+    kitty
+    waybar
+    swww
+    brightnessctl
+    playerctl
+    rofi
+    gamemode
+    power-profiles-daemon
 
     # Apps
+    steam
     vscode
     firefox
     lutris
-    speedcrunch # Odio Batiz, saquenme de Batiz
-    nautilus # Gui file manager
+    speedcrunch
+    nautilus
 
     # Develop
-    shc
-    gcc
+    shc # SH compiler
+    gcc # C compiler
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove # My favorite font
   ];
-
-
-  # Some programs configs
-  programs.steam = {
-    enable = true;
-  };
 
   # Essential Nixos & Nix features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
