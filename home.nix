@@ -1,13 +1,6 @@
-{ 
-  inputs,
-  lib,
-  config,
-  pkgs,
-  ...
-}:
+{  inputs, lib, config, pkgs, ... }:
 
 {
-
  imports = [
     # Nix files
     ./modules/home-manager/dots.nix
