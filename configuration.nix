@@ -15,7 +15,7 @@
   };
 
   # Hostname, NetworkManager and localization
-  networking.hostName = "nixos"; # Any problem with it?
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   time.timeZone = "America/Mexico_City";
 
@@ -29,9 +29,9 @@
         enable = true;
         enableOffloadCmd = true;
       };
-    amdgpuBusId = "PCI:07:00:0"; # Integrated graphics
-    nvidiaBusId = "PCI:01:00:0"; # Dedicated graphics
-   };
+      amdgpuBusId = "PCI:07:00:0"; # Integrated graphics
+      nvidiaBusId = "PCI:01:00:0"; # Dedicated graphics
+    };
   };
 
   # Audio
@@ -50,6 +50,7 @@
     enable = true;
     xwayland.enable = true;
   };
+
   services.displayManager.ly.enable = true; # Ly display manager
   services.libinput.enable = true; # Trackpad enabled
 
@@ -59,7 +60,7 @@
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
-   ];
+    ];
   };
   programs.git = {
     enable = true;
@@ -78,6 +79,7 @@
       "mbedtls-2.28.10" # Also required for lutris
     ];
   };
+
   environment.systemPackages = with pkgs; [
     # Tui
     vim

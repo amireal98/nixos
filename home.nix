@@ -15,5 +15,7 @@
       l = "ls -l";
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#nixos";
     };
+
   };
+
 }
