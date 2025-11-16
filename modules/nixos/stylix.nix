@@ -1,13 +1,8 @@
-{ 
-    lib, 
-    config, 
-    pkgs, 
-    ... 
-}:
+{ lib, config, pkgs, ... }:
+
 {
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
-
   stylix.image = ./wallpaper.png;
-
   stylix.polarity = "dark";
+
 }
