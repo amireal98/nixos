@@ -24,7 +24,7 @@
   shellAliases = {
    btw = "echo I use NixOS, btw";
    l = "ls -l";
-   nrs = "sudo nixos-rebuild switch --flake ~/Nixos#woof";
+   nrs = "sudo nixos-rebuild switch --flake ~/Nixos#nixos";
   };
  };
 

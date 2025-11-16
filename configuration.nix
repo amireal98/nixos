@@ -21,7 +21,7 @@
   };
 
   # Hostname, NetworkManager and localization
-  networking.hostName = "woof"; # Any problem with it?
+  networking.hostName = "nixos"; # Any problem with it?
   networking.networkmanager.enable = true;
   time.timeZone = "America/Mexico_City";
 
