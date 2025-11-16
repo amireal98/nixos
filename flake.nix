@@ -21,13 +21,8 @@
 
  };
 
- outputs = { 
-  self, 
-  nixpkgs, 
-  home-manager, 
-  stylix, 
-  ... }: {
-   nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+ outputs = { self, nixpkgs, home-manager, stylix, ... }: {
+  nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
     modules = [
       ./configuration.nix
