@@ -1,6 +1,6 @@
 {
-description = "NixOS";
-  
+  description = "NixOS";
+
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
 
@@ -11,12 +11,11 @@ description = "NixOS";
 
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }: {
+  outputs = { self, nixpkgs, home-manager, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager = {

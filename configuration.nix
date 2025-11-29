@@ -1,11 +1,9 @@
 { inputs, lib, config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix # Dont touch this file or everything will implode
-      ./modules/nixos/stylix.nix # Theming
-    ];
+  imports = [
+    ./hardware-configuration.nix # Dont touch this file or everything will implode
+  ];
 
   # Limine bootloader
   boot.loader.efi.canTouchEfiVariables = true;
@@ -20,7 +18,8 @@
   time.timeZone = "America/Mexico_City";
 
   # Graphics
-  services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
+  services.xserver.videoDrivers =
+    [ "nvidia" "amdgpu" ]; # Dedicated and integrated video drivers
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
@@ -58,9 +57,7 @@
   users.users.amireal = { # Thats me :D
     isNormalUser = true;
     extraGroups = [ "wheel" ];
-    packages = with pkgs; [
-      tree
-    ];
+    packages = with pkgs; [ tree ];
   };
   programs.git = {
     enable = true;
@@ -92,7 +89,7 @@
     tmux
     cava
     peaclock
- 
+
     # Hyprland
     kitty
     waybar
@@ -116,13 +113,14 @@
     gcc # C compiler
   ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.caskaydia-cove # My favorite font
-  ];
+  fonts.packages = with pkgs;
+    [
+      nerd-fonts.caskaydia-cove # My favorite font
+    ];
 
   # Essential Nixos & Nix features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  
+
   system.stateVersion = "25.05"; # Dont touch or everything will explode
 
 }
