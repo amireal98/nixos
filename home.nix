@@ -1,21 +1,16 @@
-{ inputs, lib, config, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
-  imports = [
-    ./modules/home-manager/dots.nix
-  ];
-
-  home.username = "amireal";
-  home.homeDirectory = "/home/amireal";
-  home.stateVersion = "25.05";
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      btw = "echo I use NixOS, btw";
-      l = "ls -l";
-      nrs = "sudo nixos-rebuild switch --flake ~/Nixos#nixos";
-    };
-
+ home.username = "amireal";
+ home.homeDirectory = "/home/amireal";
+ programs.git.enable = true;
+ home.stateVersion = "25.05";
+ programs.bash = {
+  enable = true;
+  shellAliases = {
+   n = "neovim";
+   btw = "echo I use NixOS, btw";
+   l = "ls -l";
   };
-
+ };
 }
