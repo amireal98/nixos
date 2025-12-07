@@ -59,6 +59,8 @@
     lazygit
     kitty
     alacritty
+    nautilus
+    yazi
   ];
 
   fonts.packages = with pkgs; [
