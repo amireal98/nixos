@@ -61,7 +61,7 @@
 
     # Dependencies
     xwayland-satellite
-    rofi
+    vicinae
 
     # Tui apps
     lazygit
