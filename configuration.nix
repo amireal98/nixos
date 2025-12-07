@@ -41,6 +41,10 @@
     xwayland.enable = true;
   };
 
+  programs.niri = {
+    enable = true;
+  };
+
   programs.firefox.enable = true;
 
   programs.git = {
@@ -62,6 +66,7 @@
     nautilus
     yazi
     rofi
+    xwayland-satellite
   ];
 
   fonts.packages = with pkgs; [
