@@ -5,6 +5,7 @@ let
   create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
 
   configs = {
+    gh = "gh";
     hypr = "hypr";
   };
 in
