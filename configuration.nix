@@ -1,0 +1,71 @@
+{ config, lib, pkgs, ... }:
+
+{
+  imports =
+    [
+      ./hardware-configuration.nix
+    ];
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  networking.hostName = "lazy";
+  networking.networkmanager.enable = true;
+
+  time.timeZone = "Europe/Mexico_City";
+
+  # i18n.defaultLocale = "en_US.UTF-8";
+  # console = {
+  #   font = "Lat2-Terminus16";
+  #   keyMap = "us";
+  #   useXkbConfig = true;
+  # };
+  
+  services.displayManager.ly.enable = true;
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
+  services.libinput.enable = true;
+
+  users.users.amireal = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+    packages = with pkgs; [
+      tree
+    ];
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  programs.firefox.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    helix
+    git
+    kitty
+    alacritty
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
+  # Enable the OpenSSH daemon.
+  # services.openssh.enable = true;
+
+  # Open ports in the firewall.
+  # networking.firewall.allowedTCPPorts = [ ... ];
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # Or disable the firewall altogether.
+  # networking.firewall.enable = false;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  
+  system.stateVersion = "25.11"; # change = boom
+
+}
+

@@ -1,0 +1,26 @@
+{ config, pkgs, ... }:
+
+{
+  home = {
+    username = "amireal";
+    homeDirectory = "/home/amireal";
+    stateVersion = "25.11";
+  };
+
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      btw = "echo I use NixOS";
+      # nrs = "sudo nixos-rebuild switch --flake ~/Nixos#lazy";
+    };
+  };
+
+  home.packages = with pkgs; [
+    neovim
+    ripgrep
+    nil
+    nixpkgs-fmt
+    nodejs
+    gcc
+  ];
+}
