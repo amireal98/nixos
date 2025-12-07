@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./home-manager/dots.nix
+  ];
+  
   home = {
     username = "amireal";
     homeDirectory = "/home/amireal";
@@ -11,7 +15,7 @@
     enable = true;
     shellAliases = {
       btw = "echo I use NixOS";
-      # nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
+      nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
     };
   };
 

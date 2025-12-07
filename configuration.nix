@@ -43,9 +43,20 @@
 
   programs.firefox.enable = true;
 
+  programs.git = {
+    enable = true;
+    config = {
+      user.name = "amireal98";
+      user.email = "amireal98@proton.me";
+      init.defaultBranch = "main";
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     helix
     git
+    gh
+    lazygit
     kitty
     alacritty
   ];
