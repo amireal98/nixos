@@ -36,11 +36,6 @@
     ];
   };
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   programs.niri = {
     enable = true;
   };
@@ -57,16 +52,24 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # Dev
     helix
     git
     gh
-    lazygit
     kitty
     alacritty
-    nautilus
-    yazi
-    rofi
+
+    # Dependencies
     xwayland-satellite
+    rofi
+
+    # Tui apps
+    lazygit
+    yazi
+    spotify-player
+
+    # Gui apps
+    nautilus
   ];
 
   fonts.packages = with pkgs; [
