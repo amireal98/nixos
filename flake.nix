@@ -14,7 +14,7 @@
   let
     system = "x86_64-linux";
   in {
-    nixosConfigurations.lazy = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
         ./configuration.nix

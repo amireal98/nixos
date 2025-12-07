@@ -11,7 +11,7 @@
     enable = true;
     shellAliases = {
       btw = "echo I use NixOS";
-      # nrs = "sudo nixos-rebuild switch --flake ~/Nixos#lazy";
+      # nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
     };
   };
 

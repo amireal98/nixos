@@ -9,7 +9,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "lazy";
+  networking.hostName = "moon";
   networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Mexico_City";
