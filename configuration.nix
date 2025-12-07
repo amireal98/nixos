@@ -61,6 +61,7 @@
     alacritty
     nautilus
     yazi
+    rofi
   ];
 
   fonts.packages = with pkgs; [
