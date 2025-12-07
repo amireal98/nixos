@@ -57,7 +57,6 @@
     git
     gh
     kitty
-    alacritty
 
     # Dependencies
     xwayland-satellite
