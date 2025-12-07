@@ -6,7 +6,9 @@ let
 
   configs = {
     gh = "gh";
+    
     hypr = "hypr";
+    niri = "niri";
   };
 in
 
