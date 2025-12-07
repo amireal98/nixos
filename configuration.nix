@@ -61,6 +61,8 @@
     # Dependencies
     xwayland-satellite
     vicinae
+    brightnessctl
+    playerctl
 
     # Tui apps
     lazygit
