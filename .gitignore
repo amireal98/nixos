@@ -1,2 +1,4 @@
 hardware-configuration.nix
-./config/gh
+
+./config/gh/hosts.yml
+./config/gh/config.yml
