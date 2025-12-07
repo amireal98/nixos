@@ -23,7 +23,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.amireal = import ./home.nix;
-          home-manager.backupFileExtension = ".bak";
+          home-manager.backupFileExtension = "bak";
         }
       ];
     };
