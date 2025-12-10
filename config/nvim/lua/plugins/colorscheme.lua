@@ -1,8 +1,9 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "sainnhe/gruvbox-material",
+    priority = 1000,
     config = function()
-      vim.cmd.colorscheme "tokyonight"
-    end
+      vim.cmd.colorscheme("gruvbox-material")
+    end,
   },
 }
