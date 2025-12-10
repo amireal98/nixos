@@ -6,9 +6,12 @@ let
 
   configs = {
     gh = "gh";
+    nvim = "nvim";
+
     hypr = "hypr";
     niri = "niri";
-    nvim = "nvim";
+
+    kitty = "kitty";
   };
 in
 

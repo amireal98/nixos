@@ -53,7 +53,6 @@
 
   environment.systemPackages = with pkgs; [
     # Dev
-    helix
     git
     gh
     kitty
