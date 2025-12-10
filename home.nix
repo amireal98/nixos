@@ -27,5 +27,6 @@
     nixpkgs-fmt
     nodejs
     gcc
+    ascii-image-converter
   ];
 }
