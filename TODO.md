@@ -1,3 +1,4 @@
 Change the colorscheme
 Add nvidia prime
-Configura hyprland
+Configure hyprland
+Configure neovim (whichkey and lsp)
