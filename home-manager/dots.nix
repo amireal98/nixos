@@ -7,6 +7,7 @@ let
   configs = {
     gh = "gh";
     nvim = "nvim";
+    spotify-player = "spotify-player";
 
     hypr = "hypr";
     niri = "niri";
