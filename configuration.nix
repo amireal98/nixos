@@ -74,6 +74,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    nerd-fonts.envy-code-r
   ];
 
   # Enable the OpenSSH daemon.
