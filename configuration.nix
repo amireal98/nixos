@@ -39,6 +39,10 @@
   programs.niri = {
     enable = true;
   };
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   programs.firefox.enable = true;
 
