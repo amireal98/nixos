@@ -80,6 +80,7 @@
     # Gui apps
     nautilus
     obsidian
+    vesktop
   ];
 
   fonts.packages = with pkgs; [
