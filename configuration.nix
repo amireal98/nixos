@@ -75,6 +75,7 @@
     yazi
     spotify-player
     fastfetch
+    nitch
 
     # Gui apps
     nautilus
