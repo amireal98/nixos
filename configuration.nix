@@ -67,6 +67,7 @@
     lazygit
     yazi
     spotify-player
+    fastfetch
 
     # Gui apps
     nautilus
@@ -74,7 +75,9 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
-    nerd-fonts.envy-code-r
+    nerd-fonts.ubuntu
+    nerd-fonts.d2coding
+    nerd-fonts.zed-mono
   ];
 
   # Enable the OpenSSH daemon.
