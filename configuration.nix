@@ -74,9 +74,6 @@
   ];
 
   fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.ubuntu
-    nerd-fonts.d2coding
     nerd-fonts.zed-mono
   ];
 
