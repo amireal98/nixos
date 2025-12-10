@@ -75,6 +75,7 @@
 
     # Gui apps
     nautilus
+    obsidian
   ];
 
   fonts.packages = with pkgs; [
