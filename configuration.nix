@@ -69,6 +69,7 @@
     vicinae
     brightnessctl
     playerctl
+    hyprlock
 
     # Tui apps
     lazygit
