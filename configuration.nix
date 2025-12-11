@@ -23,11 +23,30 @@
   nixpkgs.config = {
     allowUnfree = true;
   };
+
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
+  hardware.nvidia = {
+    open = true;
+    modesetting.enable = true;
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+    amdgpuBusId = "PCI:07:00:0"; # Integrated graphics
+    nvidiaBusId = "PCI:01:00:0"; # Dedicated graphics
+   };
+  };
   
   services.displayManager.ly.enable = true;
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+    jack.enable = true;
+    wireplumber.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
   };
   services.libinput.enable = true;
 
