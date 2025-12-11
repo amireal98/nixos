@@ -93,6 +93,9 @@
     spotify-player
     fastfetch
     nitch
+    cava
+    asciiquarium
+    pipes-rs
 
     # Gui apps
     nautilus
