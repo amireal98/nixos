@@ -1,6 +1,4 @@
 Change the colorscheme
-Add nvidia prime
-Configure hyprland
 Configure neovim (whichkey and lsp)
 Configure waybar or quickshell
 Add and configure Sylix
