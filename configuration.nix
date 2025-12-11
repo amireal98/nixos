@@ -39,9 +39,6 @@
     ];
   };
 
-  programs.niri = {
-    enable = true;
-  };
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -65,11 +62,11 @@
     kitty
 
     # Dependencies
-    xwayland-satellite
     vicinae
     brightnessctl
     playerctl
     hyprlock
+    swww
 
     # Tui apps
     lazygit
