@@ -1,12 +1,10 @@
 return {
-  {
-    "sainnhe/sonokai",
-    priority = 1000,
-    config = function()
-      vim.g.sonokai_transparent_background = "0"
-      vim.g.sonokai_enable_italic = "1"
-      vim.g.sonokai_style = "andromeda"
-      vim.cmd.colorscheme("sonokai")
-    end,
-  },
+  "zenbones-theme/zenbones.nvim",
+  dependencies = "rktjmp/lush.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.g.zenbones_darken_comments = 45
+    vim.cmd.colorscheme('zenbones')
+  end
 }
