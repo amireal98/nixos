@@ -98,6 +98,7 @@
     nautilus
     obsidian
     vesktop
+    steam
   ];
 
   fonts.packages = with pkgs; [
