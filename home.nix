@@ -20,10 +20,6 @@
     };
   };
 
-  programs.zen-browser = {
-    enable = true;
-  };
-
   home.packages = [
     pkgs.neovim
     pkgs.ripgrep
