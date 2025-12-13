@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
 
-      # ./modules/stylix.nix
+      ./modules/stylix.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
