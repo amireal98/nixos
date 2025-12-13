@@ -3,7 +3,6 @@
 {
   imports = [
     ./home-manager/dots.nix
-    inputs.zen-browser.homeModules.beta
   ];
   
   home = {
@@ -19,6 +18,10 @@
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
     };
+  };
+
+  programs.zen-browser = {
+    enable = true;
   };
 
   home.packages = [
