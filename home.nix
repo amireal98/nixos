@@ -20,17 +20,14 @@
     };
   };
 
-  home.packages = with pkgs; [
-    neovim
-    ripgrep
-    nil
-    nixpkgs-fmt
-    nodejs
-    gcc
-    ascii-image-converter
+  home.packages = [
+    pkgs.neovim
+    pkgs.ripgrep
+    pkgs.nil
+    pkgs.nixpkgs-fmt
+    pkgs.nodejs
+    pkgs.gcc
+    pkgs.ascii-image-converter
   ];
 
-  home.packages = [
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-  ];
 }
