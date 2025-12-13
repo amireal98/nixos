@@ -107,7 +107,6 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.iosevka-term
-    nerd-fonts.iosevka
   ];
 
   # Enable the OpenSSH daemon.

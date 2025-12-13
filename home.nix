@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./home-manager/dots.nix
+    ./home-manager/dotfiles.nix
   ];
   
   home = {
