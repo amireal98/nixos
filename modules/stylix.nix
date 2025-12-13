@@ -12,6 +12,7 @@
 	name = "Iosevka Nerd Font";
       };
     };
-    targets.qt.enable = false;
+    targets.qt.enable = true;
+    targets.gtk.enable = true;
   };
 }
