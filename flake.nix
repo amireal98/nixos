@@ -34,7 +34,7 @@
           home-manager.users.amireal = import ./home.nix;
           home-manager.backupFileExtension = "bak";
         }
-	stylix.nixosModules.stylix
+	# stylix.nixosModules.stylix
 	stylix.homeModules.stylix
       ];
     };
