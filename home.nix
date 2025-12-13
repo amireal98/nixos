@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -28,5 +28,9 @@
     nodejs
     gcc
     ascii-image-converter
+  ];
+
+  home.packages = [
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
