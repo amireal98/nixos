@@ -3,6 +3,7 @@
 {
   imports = [
     ./home-manager/dots.nix
+    inputs.zen-browser.homeModules.beta
   ];
   
   home = {
@@ -28,7 +29,6 @@
     pkgs.nodejs
     pkgs.gcc
     pkgs.ascii-image-converter
-    inputs.zen-browser.packages.default
   ];
 
 }
