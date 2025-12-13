@@ -28,6 +28,7 @@
     pkgs.nodejs
     pkgs.gcc
     pkgs.ascii-image-converter
+    inputs.zen-browser.packages.default
   ];
 
 }
