@@ -105,6 +105,7 @@
     vesktop
     steam
     zed-editor
+    vscodium
   ];
 
   fonts.packages = with pkgs; [
