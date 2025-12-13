@@ -102,6 +102,7 @@
     obsidian
     vesktop
     steam
+    zed-editor
   ];
 
   fonts.packages = with pkgs; [
