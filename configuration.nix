@@ -72,6 +72,7 @@
   };
 
   programs.firefox.enable = true;
+  programs.neovim.defaultEditor = true;
 
   programs.git = {
     enable = true;
