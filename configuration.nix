@@ -77,7 +77,7 @@
 
   programs.starship = {
     enable = true;
-    programs.starship.presets = [ "nerd-font-symbols" ];
+    presets = [ "nerd-font-symbols" ];
   };
 
   environment.systemPackages = with pkgs; [
