@@ -1,6 +1,11 @@
 return {
-  "folke/tokyonight.nvim",
+  "metalelf0/black-metal-theme-neovim",
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd.colorscheme "tokyonight-night"
+    require("black-metal").setup({
+      -- optional configuration here
+    })
+    require("black-metal").load()
   end
 }
