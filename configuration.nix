@@ -83,47 +83,46 @@
     enable = true;
     defaultEditor = true;
   };
-
   programs.starship = {
     enable = true;
     presets = [ "nerd-font-symbols" ];
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = [
     # Dev
-    git
-    gh
-    kitty
+    pkgs.git
+    pkgs.gh
+    pkgs.kitty
 
     # Dependencies
-    vicinae
-    brightnessctl
-    playerctl
-    hyprlock
-    swww
+    pkgs.vicinae
+    pkgs.brightnessctl
+    pkgs.playerctl
+    pkgs.hyprlock
+    pkgs.swww
 
     # Tui apps
-    lazygit
-    yazi
-    spotify-player
-    fastfetch
-    nitch
-    cava
-    asciiquarium
-    pipes-rs
+    pkgs.lazygit
+    pkgs.yazi
+    pkgs.spotify-player
+    pkgs.fastfetch
+    pkgs.nitch
+    pkgs.cava
+    pkgs.asciiquarium
+    pkgs.pipes-rs
 
     # Gui apps
-    nautilus
-    obsidian
-    vesktop
-    steam
-    zed-editor
-    vscodium
-    firefox
+    pkgs.nautilus
+    pkgs.obsidian
+    pkgs.vesktop
+    pkgs.steam
+    pkgs.zed-editor
+    pkgs.vscodium
+    pkgs.firefox
   ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.iosevka-term
+  fonts.packages = [
+    pkgs.nerd-fonts.iosevka-term
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
