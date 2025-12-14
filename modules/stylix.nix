@@ -11,7 +11,7 @@
 	package = pkgs.nerd-fonts.iosevka;
 	name = "Iosevka Nerd Font";
       };
-      Serif = {
+      serif = {
 	package = pkgs.poppins;
 	name = "Poppins";
       };
