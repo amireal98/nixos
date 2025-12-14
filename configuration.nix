@@ -71,9 +71,6 @@
     ];
   };
 
-  programs.firefox.enable = true;
-  programs.neovim.defaultEditor = true;
-
   programs.git = {
     enable = true;
     config = {
@@ -81,6 +78,10 @@
       user.email = "amireal98@proton.me";
       init.defaultBranch = "main";
     };
+  };
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
   };
 
   programs.starship = {
@@ -118,20 +119,12 @@
     steam
     zed-editor
     vscodium
+    firefox
   ];
 
   fonts.packages = with pkgs; [
     nerd-fonts.iosevka-term
   ];
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
