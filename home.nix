@@ -3,6 +3,7 @@
 {
   imports = [
     ./home-manager/dotfiles.nix
+    inputs.stylix.homeModules.stylix
   ];
   
   home = {
