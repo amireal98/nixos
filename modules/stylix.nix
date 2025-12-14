@@ -11,6 +11,18 @@
 	package = pkgs.nerd-fonts.iosevka;
 	name = "Iosevka Nerd Font";
       };
+      Serif = {
+	package = pkgs.poppins;
+	name = "Poppins";
+      };
+      sansSerif = {
+	package = pkgs.poppins;
+	name = "Poppins";
+      };
+      emoji = {
+	package = pkgs.noto-fonts-emoji;
+	name = "Noto Color Emoji";
+      };
     };
     targets = {
       qt.enable = true;
