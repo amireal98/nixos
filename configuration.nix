@@ -51,6 +51,10 @@
     alsa.support32Bit = true;
   };
   services.libinput.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   users.users.amireal = {
     isNormalUser = true;
@@ -58,11 +62,6 @@
     packages = with pkgs; [
       tree
     ];
-  };
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
   };
 
   programs.firefox.enable = true;
@@ -74,6 +73,10 @@
       user.email = "amireal98@proton.me";
       init.defaultBranch = "main";
     };
+  };
+  programs.starship = {
+    enable = true;
+    programs.starship.presets [ "nerd-font-symbols" ];
   };
 
   environment.systemPackages = with pkgs; [
