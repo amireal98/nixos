@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     image = ../wallpapers/0008.png;
-    base24Scheme = "${pkgs.base24-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base24-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
     fonts = {
       monospace = {
