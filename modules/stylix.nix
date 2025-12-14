@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     image = ../wallpapers/0008.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
     polarity = "dark";
     fonts = {
       monospace = {
@@ -12,9 +12,9 @@
 	name = "Iosevka Nerd Font";
       };
     };
-    # targets = {
-    #   qt.enable = true;
-    #   gtk.enable = true;
-    # };
+    targets = {
+      qt.enable = true;
+      gtk.enable = true;
+    };
   };
 }
