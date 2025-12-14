@@ -8,8 +8,12 @@
       ./modules/stylix.nix
     ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    efi.canTouchEfiVariables = true;
+    limine = {
+      enable = true;
+    };
+  };
 
   networking.hostName = "moon";
   networking.networkmanager.enable = true;
