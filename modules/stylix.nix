@@ -5,7 +5,7 @@
     enable = true;
     image = ../wallpapers/0008.png;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
     polarity = "dark";
 
     fonts = {
