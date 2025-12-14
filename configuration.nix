@@ -83,7 +83,6 @@
     enable = true;
     defaultEditor = true;
   };
-  programs.nano.enable = false;
 
   programs.starship = {
     enable = true;
