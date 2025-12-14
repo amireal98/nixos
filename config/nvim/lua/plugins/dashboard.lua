@@ -31,7 +31,6 @@ return {
         header = vim.split(logo, "\n"),
         -- stylua: ignore
         center = {
-	  { action = "Ex",                                             desc = " Explorer",        icon = " ", key = "e" },
 	  { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
         },
       },
