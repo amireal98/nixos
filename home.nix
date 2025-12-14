@@ -19,6 +19,7 @@
       l = "ls -l";
     };
   };
+  programs.neovim.defaultEditor = true;
 
   home.packages = [
     pkgs.neovim

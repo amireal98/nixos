@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    image = ../wallpapers/0008.png;
+    image = ../wallpapers/dark-lines.jpeg;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
     polarity = "dark";
