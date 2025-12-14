@@ -12,6 +12,7 @@ return {
 	"vim",
 	"bash",
 	"nix",
+	"conf",
       },
       auto_install = false,
     })
