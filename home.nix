@@ -9,6 +9,9 @@
     username = "amireal";
     homeDirectory = "/home/amireal";
     stateVersion = "25.11";
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
   };
 
   programs.bash = {
@@ -21,6 +24,7 @@
   };
 
   home.packages = [
+    pkgs.neovim
     pkgs.ripgrep
     pkgs.nil
     pkgs.nixpkgs-fmt

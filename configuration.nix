@@ -79,10 +79,6 @@
       init.defaultBranch = "main";
     };
   };
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
   programs.starship = {
     enable = true;
     presets = [ "nerd-font-symbols" ];
