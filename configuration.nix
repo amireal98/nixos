@@ -74,9 +74,10 @@
       init.defaultBranch = "main";
     };
   };
+
   programs.starship = {
     enable = true;
-    programs.starship.presets [ "nerd-font-symbols" ];
+    programs.starship.presets = [ "nerd-font-symbols" ];
   };
 
   environment.systemPackages = with pkgs; [
