@@ -12,6 +12,7 @@
     efi.canTouchEfiVariables = true;
     limine = {
       enable = true;
+      efiSupport = true;
     };
   };
 
@@ -28,6 +29,9 @@
 
   nixpkgs.config = {
     allowUnfree = true;
+    permittedInsecurePackages = [
+      "mbedtls_2"
+    ];
   };
 
   services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
