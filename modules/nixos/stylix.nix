@@ -15,12 +15,12 @@
 	name = "JetBrainsMono Nerd Font";
       };
       serif = {
-	package = pkgs.poppins;
-	name = "Poppins";
+	package = pkgs.noto-fonts;
+	name = "noto serif";
       };
       sansSerif = {
-	package = pkgs.poppins;
-	name = "Poppins";
+	package = pkgs.inter;
+	name = "inter";
       };
       emoji = {
 	package = pkgs.noto-fonts-color-emoji;
@@ -31,7 +31,6 @@
     targets = {
       gtk.enable = true;
       qt.enable = true;
-      zen-browser.enable = false;
       limine.enable = true;
     };
   };
