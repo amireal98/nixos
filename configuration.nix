@@ -121,7 +121,7 @@
     pkgs.vesktop
     pkgs.steam
     pkgs.zed-editor
-    pkgs.vscodium
+    pkgs.vscode
     pkgs.firefox
   ];
 
