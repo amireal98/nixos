@@ -14,12 +14,13 @@ in
   home = {
     username = "amireal";
     homeDirectory = "/home/amireal";
-    backupFileExtension = "backup";
     stateVersion = "25.11";
     sessionVariables = {
       EDITOR = "nvim";
     };
   };
+
+  home-manager.backupFileExtension = "hm-backup";
 
   programs.home-manager.enable = true;
   programs.bash = {
