@@ -30,6 +30,7 @@
     targets = {
       qt.enable = true;
       gtk.enable = true;
+      vicinae.enable = true;
       zen-browser = {
 	enable = false;
 	profileNames = [ "default" "amireal" ];
