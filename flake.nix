@@ -19,7 +19,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... } @inputs: let
+  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: let
     system = "x86_64-linux";
   in {
     nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
