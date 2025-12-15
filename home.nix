@@ -17,6 +17,7 @@
   };
 
   programs.home-manager.enable = true;
+  programs.zen-browser.enable = true;
   programs.bash = {
     enable = true;
     shellAliases = {
