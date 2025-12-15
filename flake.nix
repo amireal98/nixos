@@ -28,6 +28,11 @@
       modules = [
         ./configuration.nix
 	stylix.nixosModules.stylix
+	{
+	  home-manager.useGlobalPkgs = true;
+	  home-manager.useUserPackages = true;
+	  home-manager.backupFileExtension = "hm-backup";
+	}
       ];
     };
   };
