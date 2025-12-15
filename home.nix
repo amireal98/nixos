@@ -3,6 +3,8 @@
 {
   imports = [
     ./home-manager/dotfiles.nix
+
+    inputs.zen-browser.homeModules.beta
   ];
   
   home = {
