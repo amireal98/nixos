@@ -27,13 +27,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.amireal = import ./home.nix;
-          home-manager.backupFileExtension = "bak";
-        }
 	stylix.nixosModules.stylix
       ];
     };
