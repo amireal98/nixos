@@ -7,6 +7,7 @@ in
 {
   imports = [
     ./modules/home-manager/dotfiles.nix
+    ./modules/home-manager/stylix.nix
 
     inputs.zen-browser.homeModules.beta
   ];
