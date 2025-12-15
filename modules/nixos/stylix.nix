@@ -6,8 +6,8 @@
     image = ../../wallpapers/dark-lines.jpeg;
     autoEnable = false;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
-    polarity = "dark";
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
+    #polarity = "dark";
 
     fonts = {
       monospace = {
