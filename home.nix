@@ -6,7 +6,7 @@ in
 
 {
   imports = [
-    ./home-manager/dotfiles.nix
+    ./modules/home-manager/dotfiles.nix
 
     inputs.zen-browser.homeModules.beta
   ];

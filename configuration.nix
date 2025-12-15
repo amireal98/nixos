@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./modules/stylix.nix
+      ./modules/nixos/stylix.nix
       inputs.home-manager.nixosModules.home-manager
     ];
 
