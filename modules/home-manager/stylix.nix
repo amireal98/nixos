@@ -1,4 +1,4 @@
-{ pkgs, config, stylix, ... }: # Configuration.nix
+{ pkgs, config, stylix, ... }: # Home.nix
 
 {
   stylix = {
@@ -26,11 +26,14 @@
 	name = "Noto Color Emoji";
       };
     };
-
+    
     targets = {
       qt.enable = true;
       gtk.enable = true;
-      limine.enable = true;
+      zen-browser = {
+	enable = false;
+	profileNames = [ "default" "amireal" ];
+      };
     };
   };
 }
