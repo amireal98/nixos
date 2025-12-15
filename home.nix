@@ -18,7 +18,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = "echo I use NixOS";
+      btw = "home manager works";
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
     };
