@@ -29,7 +29,7 @@
         ./configuration.nix
 	stylix.nixosModules.stylix
 	{
-	  stylix.homeManagerIntegration.autoImport = false;
+	  stylix.homeManagerIntegration.autoImport = true;
 	  home-manager.useGlobalPkgs = true;
 	  home-manager.useUserPackages = true;
 	  home-manager.backupFileExtension = "bak";
