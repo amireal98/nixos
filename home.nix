@@ -1,5 +1,9 @@
 { inputs, pkgs, config, ... }:
 
+let
+  username = "amireal";
+in
+
 {
   imports = [
     ./home-manager/dotfiles.nix
@@ -17,13 +21,22 @@
   };
 
   programs.home-manager.enable = true;
-  programs.zen-browser.enable = true;
   programs.bash = {
     enable = true;
     shellAliases = {
       btw = "echo I use NixOS";
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
+    };
+  };
+  programs.zen-browser = {
+    enable = true;
+    profiles = {
+      ${username} = {
+	id = 0;
+	name = "${username}.default";
+	isDefault = true;
+      };
     };
   };
 
