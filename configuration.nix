@@ -121,7 +121,6 @@
     pkgs.steam
     pkgs.zed-editor
     pkgs.vscodium
-    pkgs.firefox
   ];
 
   fonts.packages = [
