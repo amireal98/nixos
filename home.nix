@@ -15,12 +15,13 @@ in
     username = "amireal";
     homeDirectory = "/home/amireal";
     stateVersion = "25.11";
+    backupFileExtension = "bak";
     sessionVariables = {
       EDITOR = "nvim";
     };
   };
 
-  #programs.home-manager.enable = true;
+  programs.home-manager.enable = true;
   programs.bash = {
     enable = true;
     shellAliases = {
