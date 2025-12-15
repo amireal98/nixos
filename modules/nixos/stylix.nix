@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     image = ../../wallpapers/dark-lines.jpeg;
-    autoEnable = true;
+    autoEnable = false;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium .yaml";
     polarity = "dark";
