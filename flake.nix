@@ -27,7 +27,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
-	# stylix.nixosModules.stylix
+	stylix.nixosModules.stylix
 	{
 	  stylix.homeManagerIntegration.autoImport = false;
 	  home-manager.useGlobalPkgs = true;
