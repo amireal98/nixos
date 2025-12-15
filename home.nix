@@ -10,6 +10,7 @@ in
     ./modules/home-manager/stylix.nix
 
     inputs.zen-browser.homeModules.beta
+    inputs.stylix.homeModules.stylix
   ];
   
   home = {
