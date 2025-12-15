@@ -19,7 +19,7 @@ in
       EDITOR = "nvim";
     };
   };
-  home-manager.backupFileExtension = "bak";
+  home-manager.users.amireal.backupFileExtension = "bak";
 
   programs.home-manager.enable = true;
   programs.bash = {
