@@ -1,11 +1,11 @@
-{ config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix
-
       ./modules/stylix.nix
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   boot.loader = {
@@ -63,12 +63,19 @@
     xwayland.enable = true;
   };
 
-  users.users.amireal = {
+  users.users.amireal = { # its me
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
     ];
+  };
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      amireal = import ./home.nix
+    };
   };
 
   programs.git = {
