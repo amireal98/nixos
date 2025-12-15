@@ -31,6 +31,7 @@
       qt.enable = true;
       gtk.enable = true;
       vicinae.enable = true;
+      obsidian.enable = true;
       zen-browser = {
 	enable = false;
 	profileNames = [ "default" "amireal" ];
