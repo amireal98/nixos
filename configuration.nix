@@ -125,9 +125,8 @@
     pkgs.firefox
   ];
 
-  fonts.packages = [
-    pkgs.nerd-fonts.iosevka-term
-  ];
+  # fonts.packages = [
+  # ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
