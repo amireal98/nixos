@@ -29,6 +29,8 @@
     };
 
     targets = {
+      gtk.enable = true;
+      qt.enable = true;
       limine.enable = true;
     };
   };
