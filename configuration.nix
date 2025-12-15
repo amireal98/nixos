@@ -74,7 +74,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      amireal = import ./home.nix
+      amireal = import ./home.nix;
     };
   };
 
