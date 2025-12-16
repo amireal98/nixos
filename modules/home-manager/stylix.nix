@@ -4,6 +4,7 @@
   stylix = {
     targets = {
       zen-broser.enable = false;
+      kitty.enable = false;
     };
   };
 }
