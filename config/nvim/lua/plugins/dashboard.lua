@@ -1,9 +1,10 @@
+vim.keymap.set("n", "<leader>qd", vim.cmd.Dashboard)
+
 return {
   "nvimdev/dashboard-nvim",
-  lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+  lazy = false,
   opts = function()
     local logo = [[
-⣿⣿⣿⣿⠟⠛⡟⢻⣿⣿⣿⣿⣿⣿⡋⢿⣿⣿⣿⣿⣿⣿⣿⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢻⣿⣿⣿⣿⣿⣿⣿⢻
 ⣿⣿⣿⡿⢠⣿⠀⣾⣿⣿⣿⣿⣿⣿⣇⠘⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⡿⠋⣠⣾⣿⣿⣿⣿⣿⣿⣿⡏⢸
 ⣿⡿⠟⣁⣤⣤⣤⣉⡉⠀⢸⣿⣿⣿⣿⡆⢻⡿⠟⢛⣉⣡⣤⣤⣠⣤⣤⣌⣉⠛⢿⠏⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⣾
 ⡟⢀⣾⣿⣿⣿⣿⣿⣷⡀⠀⠛⠛⠋⣉⣁⣈⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣈⣀⠛⠛⠛⠉⣿⣿⣿⣿⣿⡿⠃⣴⣿
@@ -20,24 +21,22 @@ return {
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠐⠟⠻⡏⠠⣤⣶⣶⡄⠈⠛⠻⣿⣿⣿⡿⠁⣼⣿⡿⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⡦⢌⣀⡈⣿⣿⣷⣄⠀⠾⡿⠟⢋⣠⣾⣿⣿⣇⡘⢻⡟⢀⠙⢿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣌⠙⠀⠿⣿⣿⣿⣷⣶⣶⣶⣿⣿⣿⣿⠏⠉⢠⡀⠠⣾⣷⡀⢻⣿⣿⣿⣿⣿⣿
-⡟⠻⠻⠟⡿⠿⠿⠿⠟⠿⠿⢿⣿⣿⠀⣿⣿⣷⡆⢀⡉⠛⢿⣿⣿⣿⣿⡿⠟⢁⣴⣧⠈⣿⣆⠘⣿⣷⡀⢿⣿⣿⣿⣿⣿
-⣷⣤⣤⣤⣤⣄⣴⣤⣤⣬⣤⣼⣿⣿⡀⠛⢛⢛⣀⣾⣿⣷⣦⠌⢉⣉⣁⣤⣶⣿⣿⣿⡇⠸⣿⡆⠉⠉⢁⣈⣿⣿⣿⣿⣿
     ]]
 
-    logo = string.rep("\n", 8) .. logo .. "\n\n"
+    logo = string.rep("\n", 2) .. logo .. "\n\n"
 
     local opts = {
       theme = "doom",
       hide = {
-        -- this is taken care of by lualine
-        -- enabling this messes up the actual laststatus setting after loading a file
         statusline = false,
       },
       config = {
         header = vim.split(logo, "\n"),
-        -- stylua: ignore
+
         center = {
-	  { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
+	  { desc = "do you like to suffer, don't you?", },
+	  { action = function() vim.cmd("Telescope find_files") end, desc = " start",                icon = " ", key = "f"  },
+	  { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " goodbye",            icon = " ", key = "q" },
         },
       },
     }
