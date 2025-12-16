@@ -27,6 +27,7 @@ in
       btw = "echo I use NixOS";
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
+      n = "clear && nvim";
     };
   };
   programs.zen-browser = {
