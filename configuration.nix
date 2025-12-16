@@ -92,6 +92,8 @@
     presets = [ "nerd-font-symbols" ];
   };
 
+  programs.steam.enable = true;
+
   environment.systemPackages = [
     # Dev
     pkgs.git
@@ -119,7 +121,6 @@
     pkgs.nautilus
     pkgs.obsidian
     pkgs.vesktop
-    pkgs.steam
     pkgs.zed-editor
     pkgs.vscode
     pkgs.firefox
