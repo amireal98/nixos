@@ -12,6 +12,7 @@ return {
 	"vim",
 	"bash",
 	"nix",
+	"c",
       },
       auto_install = false,
     })
