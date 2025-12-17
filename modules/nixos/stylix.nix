@@ -6,7 +6,7 @@
     image = ../../wallpapers/dark-lines.jpeg;
     autoEnable = true;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
     polarity = "dark";
 
     fonts = {

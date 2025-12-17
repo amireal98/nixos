@@ -32,5 +32,6 @@
     pkgs.zed-editor
     pkgs.vscode
     pkgs.lutris
+    pkgs.mpv
   ];
 }
