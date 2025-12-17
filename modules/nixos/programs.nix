@@ -17,4 +17,5 @@
 
   programs.steam.enable = true;
   programs.firefox.enable = true;
+  programs.flatpak.enable = true;
 }
