@@ -21,6 +21,8 @@ return {
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠐⠟⠻⡏⠠⣤⣶⣶⡄⠈⠛⠻⣿⣿⣿⡿⠁⣼⣿⡿⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⡦⢌⣀⡈⣿⣿⣷⣄⠀⠾⡿⠟⢋⣠⣾⣿⣿⣇⡘⢻⡟⢀⠙⢿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣌⠙⠀⠿⣿⣿⣿⣷⣶⣶⣶⣿⣿⣿⣿⠏⠉⢠⡀⠠⣾⣷⡀⢻⣿⣿⣿⣿⣿⣿
+
+do you like neovim, don't you?
     ]]
 
     logo = string.rep("\n", 1) .. logo .. "\n\n"
@@ -34,8 +36,9 @@ return {
         header = vim.split(logo, "\n"),
 
         center = {
-	  { desc = "do you like to suffer, don't you?", },
-	  { action = function() vim.cmd("Telescope find_files") end, desc = " start",                icon = " ", key = "f"  },
+	  -- { desc = "do you like to suffer, don't you?", },
+	  { action = function() vim.cmd("Telescope find_files") end, desc = " start",                icon = " ", key = "f" },
+	  { action = function() vim.cmd("Lazy") end, desc = " plugins",                              icon = "󰒲 ", key = "l" },
 	  { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " goodbye",            icon = " ", key = "q" },
         },
       },
