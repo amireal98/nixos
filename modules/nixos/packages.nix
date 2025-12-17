@@ -13,6 +13,7 @@
     pkgs.playerctl
     pkgs.hyprlock
     pkgs.swww
+    pkgs.wine
 
     # Tui
     pkgs.lazygit
