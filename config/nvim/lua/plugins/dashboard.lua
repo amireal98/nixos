@@ -22,7 +22,7 @@ return {
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣀⡦⢌⣀⡈⣿⣿⣷⣄⠀⠾⡿⠟⢋⣠⣾⣿⣿⣇⡘⢻⡟⢀⠙⢿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣌⠙⠀⠿⣿⣿⣿⣷⣶⣶⣶⣿⣿⣿⣿⠏⠉⢠⡀⠠⣾⣷⡀⢻⣿⣿⣿⣿⣿⣿
 
-do you like neovim, don't you?
+do you the space and the stars, don't you?
     ]]
 
     logo = string.rep("\n", 1) .. logo .. "\n\n"
