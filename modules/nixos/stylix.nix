@@ -16,11 +16,11 @@
       };
       serif = {
 	package = pkgs.noto-fonts;
-	name = "noto serif";
+	name = "Noto Serif";
       };
       sansSerif = {
-	package = pkgs.inter;
-	name = "inter";
+	package = pkgs.noto-fonts;
+	name = "Noto";
       };
       emoji = {
 	package = pkgs.noto-fonts-color-emoji;
