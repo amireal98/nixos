@@ -30,5 +30,8 @@
     pkgs.vesktop
     pkgs.zed-editor
     pkgs.vscode
+    
+    #Games
+    pkgs.gamemode
   ];
 }
