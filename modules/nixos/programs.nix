@@ -16,5 +16,6 @@
   };
 
   programs.steam.enable = true;
-  programs.firefox.enable = true;
+  # programs.firefox.enable = true;
+  programs.lutris.enable = true;
 }
