@@ -48,7 +48,6 @@ in
     pkgs.nixpkgs-fmt
     pkgs.nodejs
     pkgs.gcc
-    pkgs.ascii-image-converter
   ];
 
 }

@@ -4,7 +4,10 @@
   imports =
     [
       ./hardware-configuration.nix
+
       ./modules/nixos/stylix.nix
+      ./modules/nixos/packages.nix
+      ./modules/nixos/programs.nix
 
       inputs.home-manager.nixosModules.home-manager
     ];
@@ -21,7 +24,6 @@
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Mexico_City";
-  # i18n.defaultLocale = "en_US.UTF-8";
   console = {
     font = "Lat2-Terminus16";
     keyMap = "us";
@@ -34,7 +36,7 @@
     ];
   };
 
-  services.xserver.videoDrivers = ["nvidia" "amdgpu"]; # Dedicated and integrated video drivers
+  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
   hardware.nvidia = {
     open = true;
     modesetting.enable = true;
@@ -79,53 +81,7 @@
     };
   };
 
-  programs.git = {
-    enable = true;
-    config = {
-      user.name = "amireal98";
-      user.email = "amireal98@proton.me";
-      init.defaultBranch = "main";
-    };
-  };
-  programs.starship = {
-    enable = true;
-    presets = [ "nerd-font-symbols" ];
-  };
-
-  programs.steam.enable = true;
-
-  environment.systemPackages = [
-    # Dev
-    pkgs.git
-    pkgs.gh
-    pkgs.kitty
-
-    # Dependencies
-    pkgs.vicinae
-    pkgs.brightnessctl
-    pkgs.playerctl
-    pkgs.hyprlock
-    pkgs.swww
-
-    # Tui apps
-    pkgs.lazygit
-    pkgs.yazi
-    pkgs.spotify-player
-    pkgs.fastfetch
-    pkgs.nitch
-    pkgs.cava
-    pkgs.asciiquarium
-    pkgs.pipes-rs
-
-    # Gui apps
-    pkgs.nautilus
-    pkgs.obsidian
-    pkgs.vesktop
-    pkgs.zed-editor
-    pkgs.vscode
-    pkgs.firefox
-  ];
-
+  
   # fonts.packages = [
   # ];
 
