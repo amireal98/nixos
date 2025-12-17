@@ -14,7 +14,7 @@
     pkgs.hyprlock
     pkgs.swww
 
-    # Tui apps
+    # Tui
     pkgs.lazygit
     pkgs.yazi
     pkgs.spotify-player
@@ -23,5 +23,12 @@
     pkgs.cava
     pkgs.asciiquarium
     pkgs.pipes-rs
+
+    # Gui
+    pkgs.nautilus
+    pkgs.obsidian
+    pkgs.vesktop
+    pkgs.zed-editor
+    pkgs.vscode
   ];
 }
