@@ -32,8 +32,5 @@
     pkgs.zed-editor
     pkgs.vscode
     pkgs.lutris
-    
-    #Games
-    pkgs.gamemode
   ];
 }
