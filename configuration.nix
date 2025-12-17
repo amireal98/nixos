@@ -8,6 +8,7 @@
       ./modules/nixos/stylix.nix
       ./modules/nixos/packages.nix
       ./modules/nixos/programs.nix
+      ./modules/nixos/services.nix
 
       inputs.home-manager.nixosModules.home-manager
     ];
