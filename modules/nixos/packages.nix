@@ -15,7 +15,7 @@
     pkgs.git
     pkgs.gh
     pkgs.kitty
-    pkgs.alarcritty
+    pkgs.alacritty
 
     # Tui
     pkgs.lazygit
