@@ -32,7 +32,6 @@
     pkgs.nitch
     pkgs.cava
     pkgs.asciiquarium
-    pkgs.pipes-rs
 
     # Gui
     pkgs.nautilus
@@ -40,7 +39,6 @@
     pkgs.vesktop
     pkgs.zed-editor
     pkgs.vscode
-    pkgs.lutris
     pkgs.mpv
   ];
 }

@@ -9,6 +9,7 @@
       ./modules/nixos/packages.nix
       ./modules/nixos/programs.nix
       ./modules/nixos/services.nix
+      ./modules/nixos/gaming.nix
 
       inputs.home-manager.nixosModules.home-manager
     ];
@@ -28,21 +29,7 @@
   console = {
     keyMap = "us";
   };
-
-  services.xserver.videoDrivers = ["nvidia" "amdgpu"];
-  hardware.nvidia = {
-    open = true;
-    modesetting.enable = true;
-    prime = {
-      offload = {
-        enable = true;
-        enableOffloadCmd = true;
-      };
-    amdgpuBusId = "PCI:07:00:0"; # Integrated graphics
-    nvidiaBusId = "PCI:01:00:0"; # Dedicated graphics
-   };
-  };
-  
+ 
   services.displayManager.ly.enable = true;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -53,6 +40,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
   };
+
   services.libinput.enable = true;
   programs.hyprland = {
     enable = true;

@@ -14,9 +14,4 @@
     enable = true;
     presets = [ "nerd-font-symbols" ];
   };
-
-  programs.steam = {
-    enable = true;
-  };
-  programs.gamemode.enable = true;
 }
