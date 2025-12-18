@@ -16,14 +16,6 @@
     pkgs.gh
     pkgs.kitty
 
-    # Dependencies
-    pkgs.vicinae
-    pkgs.brightnessctl
-    pkgs.playerctl
-    pkgs.hyprlock
-    pkgs.swww
-    pkgs.wine
-
     # Tui
     pkgs.lazygit
     pkgs.yazi

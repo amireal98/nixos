@@ -12,6 +12,8 @@
       ./modules/nixos/audio.nix
       ./modules/nixos/gaming.nix
 
+      ./modules/nixos/hyprland.nix
+
       inputs.home-manager.nixosModules.home-manager
     ];
 
@@ -32,13 +34,8 @@
   };
  
   services.displayManager.ly.enable = true;
-
   services.libinput.enable = true;
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
+ 
   users.users.amireal = { # its me
     isNormalUser = true;
     extraGroups = [ "wheel" ];
