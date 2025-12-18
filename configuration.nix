@@ -26,17 +26,7 @@
 
   time.timeZone = "America/Mexico_City";
   console = {
-    font = "Lat2-Terminus16";
     keyMap = "us";
-  };
-
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowBroken = true;
-    permittedInsecurePackages = [
-      "mbedtls_2"
-      "mbedtls-2.28.10"
-    ];
   };
 
   services.xserver.videoDrivers = ["nvidia" "amdgpu"];
@@ -83,10 +73,6 @@
       amireal = import ./home.nix;
     };
   };
-
-  
-  # fonts.packages = [
-  # ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   

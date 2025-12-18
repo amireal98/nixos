@@ -1,6 +1,15 @@
 { config, lib, pkgs, ... }:
 
 {
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowBroken = true;
+    permittedInsecurePackages = [
+      "mbedtls_2"
+      "mbedtls-2.28.10"
+    ];
+  };
+
   environment.systemPackages = [
     # Dev
     pkgs.git
