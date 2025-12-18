@@ -2,6 +2,7 @@ vim.opt.title = true
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
+vim.opt.showmode = false
 
 vim.opt.shiftwidth = 2
 
