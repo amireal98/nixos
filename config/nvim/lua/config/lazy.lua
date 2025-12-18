@@ -19,7 +19,6 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
-    { 'nvim-mini/mini.nvim', version = false },
   },
   change_detection = { notify = false },
 })
