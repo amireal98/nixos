@@ -9,6 +9,7 @@
       ./modules/nixos/packages.nix
       ./modules/nixos/programs.nix
       ./modules/nixos/services.nix
+      ./modules/nixos/audio.nix
       ./modules/nixos/gaming.nix
 
       inputs.home-manager.nixosModules.home-manager
@@ -31,15 +32,6 @@
   };
  
   services.displayManager.ly.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-    jack.enable = true;
-    wireplumber.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-  };
 
   services.libinput.enable = true;
   programs.hyprland = {
