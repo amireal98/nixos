@@ -11,6 +11,7 @@
     pkgs.vicinae
     pkgs.hyprlock
     pkgs.hyprshot
+    pkgs.swaynotificationcenter
     pkgs.swww
   ];
 }
