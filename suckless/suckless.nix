@@ -8,7 +8,7 @@
     windowManager.dwm = {
       enable = true;
       package = pkgs.dwm.overrideAttrs {
-	scr = ./dwm;
+	src = ./dwm;
       };
     };
   };
