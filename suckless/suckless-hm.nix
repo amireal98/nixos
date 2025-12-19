@@ -13,7 +13,7 @@
     }))
 
     slock
-    surf
+    # surf
   ];
 
 }
