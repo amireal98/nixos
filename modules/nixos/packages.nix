@@ -38,4 +38,8 @@
     pkgs.vscode
     pkgs.mpv
   ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
 }
