@@ -21,7 +21,22 @@
 
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: let
     system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
   in {
+    devShells.${system}.suckless = pkgs.mkShell {
+      packages = with pkgs; [
+	pkg-config
+        xorg.libX11
+        xorg.libXft
+        xorg.libXinerama
+        fontconfig
+        freetype
+        harfbuzz
+        gcc
+        gnumake
+      ];
+    };
+
     nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {inherit inputs;};
