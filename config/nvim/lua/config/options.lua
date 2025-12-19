@@ -4,7 +4,7 @@ vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.showmode = false
 
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 9
 
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
