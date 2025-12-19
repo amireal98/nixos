@@ -22,16 +22,6 @@ in
     };
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowBroken = true;
-    permittedInsecurePackages = [
-      "mbedtls_2"
-      "mbedtls-2.28.10"
-      "libsoup-2"
-    ];
-  };
-
   programs.home-manager.enable = true;
   programs.fish.enable = true;
   programs.zsh.enable = true;
