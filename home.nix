@@ -8,6 +8,8 @@ in
   imports = [
     ./modules/home-manager/dotfiles.nix
 
+    ./suckless/suckless-hm.nix
+
     inputs.zen-browser.homeModules.beta
   ];
   
