@@ -32,7 +32,7 @@
       gtk.enable = true;
       qt.enable = true;
       limine.enable = true;
-      tty.enable = true;
+      console.enable = true;
     };
   };
 }
