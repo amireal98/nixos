@@ -5,10 +5,11 @@
     allowUnfree = true;
     allowBroken = true;
     permittedInsecurePackages = [
-      "mbedtls_2"
+      "mbedtls-2"
       "mbedtls-2.28.10"
       "libsoup-2"
-      "libsout-2.74.3"
+      "libsoup-2.74.3"
+      "libsoup"
     ];
   };
 
