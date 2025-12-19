@@ -15,8 +15,11 @@
     # Dev
     pkgs.git
     pkgs.gh
-    pkgs.kitty
-    pkgs.alacritty
+
+    # Depencencies
+    pkgs.brightnessctl
+    pkgs.playerctl
+    pkgs.wine
 
     # Tui
     pkgs.lazygit

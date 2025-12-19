@@ -7,11 +7,9 @@
   };
 
   environment.systemPackages = [
+    pkgs.kitty
     pkgs.vicinae
-    pkgs.brightnessctl
-    pkgs.playerctl
     pkgs.hyprlock
     pkgs.swww
-    pkgs.wine
   ];
 }
