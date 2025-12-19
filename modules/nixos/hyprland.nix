@@ -10,6 +10,7 @@
     pkgs.kitty
     pkgs.vicinae
     pkgs.hyprlock
+    pkgs.hyprshot
     pkgs.swww
   ];
 }
