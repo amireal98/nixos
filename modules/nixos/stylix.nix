@@ -15,8 +15,8 @@
 	name = "JetBrainsMono Nerd Font";
       };
       serif = {
-	package = pkgs.noto-fonts;
-	name = "Noto Serif";
+	package = pkgs.nerd-fonts.jetbrains-mono;
+	name = "JetBrainsMono Nerd Font Italic";
       };
       sansSerif = {
 	package = pkgs.nerd-fonts.jetbrains-mono;
