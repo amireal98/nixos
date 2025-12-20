@@ -22,6 +22,7 @@
     pkgs.brightnessctl
     pkgs.playerctl
     pkgs.wine
+    pkgs.shc
 
     # Tui
     pkgs.lazygit
