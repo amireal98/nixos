@@ -23,12 +23,9 @@ in
   };
 
   programs.home-manager.enable = true;
-  programs.fish.enable = true;
-  programs.zsh.enable = true;
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = "echo I use NixOS";
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
       n = "clear && nvim";
