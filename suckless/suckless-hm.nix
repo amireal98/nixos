@@ -12,6 +12,7 @@
       patches = [ ];
     }))
 
+    picom
   ];
 
 }
