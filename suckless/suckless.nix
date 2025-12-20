@@ -12,4 +12,8 @@
       };
     };
   };
+
+  environment.systemPackages = [
+    pkgs.picom
+  ];
 }
