@@ -9,9 +9,9 @@ let
     nvim = "nvim";
     spotify-player = "spotify-player";
 
-    hypr = "hypr";
-    niri = "niri";
+    picom = "picom";
 
+    hypr = "hypr";
     kitty = "kitty";
   };
 in
