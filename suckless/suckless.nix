@@ -13,7 +13,4 @@
     };
   };
 
-  environment.systemPackages = [
-    pkgs.picom
-  ];
 }
