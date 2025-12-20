@@ -19,8 +19,8 @@
 	name = "Noto Serif";
       };
       sansSerif = {
-	package = pkgs.noto-fonts;
-	name = "Noto";
+	package = pkgs.nerd-fonts.jetbrains-mono;
+	name = "JetBrainsMono Nerd Font";
       };
       emoji = {
 	package = pkgs.noto-fonts-color-emoji;
