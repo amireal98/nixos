@@ -2,7 +2,7 @@
 
 {
 	imports = [
-			./hardware-configuration.nix
+			./hardware-configuration.nix # dont change
 
 			./modules/nixos/stylix.nix
 			./modules/nixos/packages.nix
@@ -15,7 +15,7 @@
 			./suckless/suckless.nix
 
 			inputs.home-manager.nixosModules.home-manager
-		];
+	];
 
 	boot.loader = {
 		efi.canTouchEfiVariables = true;
