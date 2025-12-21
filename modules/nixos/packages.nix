@@ -32,7 +32,7 @@
 		pkgs.fastfetch
 		pkgs.nitch
 		pkgs.cava
-		pkgs.asciiquarium
+		pkgs.astroterm
 
 		# Gui
 		pkgs.nautilus
