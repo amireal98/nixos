@@ -11,6 +11,7 @@ in
 		./suckless/suckless-hm.nix
 
 		inputs.zen-browser.homeModules.beta
+		inputs.stylix.homeModules.stylix
 	];
   
 	home = {
