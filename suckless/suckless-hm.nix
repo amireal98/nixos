@@ -1,17 +1,17 @@
 { pkgs, ... }:
 
 {
-	 home.packages = with pkgs; [
-		  (pkgs.st.overrideAttrs (_: {
-			   src = ./st;
-			   patches = [ ];
-		  }))
+	home.packages = with pkgs; [
+		(pkgs.st.overrideAttrs (_: {
+			src = ./st;
+			patches = [ ];
+		}))
 
-		  (pkgs.dmenu.overrideAttrs (_: {
-			   src = ./dmenu;
-			   patches = [ ];
-		  }))
+		(pkgs.dmenu.overrideAttrs (_: {
+			src = ./dmenu;
+			patches = [ ];
+		}))
 
-		  picom
-	 ];
+		picom
+	];
 }
