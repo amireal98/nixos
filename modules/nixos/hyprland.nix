@@ -1,17 +1,17 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+	programs.hyprland = {
+		enable = true;
+		xwayland.enable = true;
+	};
 
-  environment.systemPackages = [
-    pkgs.kitty
-    pkgs.vicinae
-    pkgs.hyprlock
-    pkgs.hyprshot
-    pkgs.swaynotificationcenter
-    pkgs.swww
-  ];
+	environment.systemPackages = [
+		pkgs.kitty
+		pkgs.vicinae
+		pkgs.hyprlock
+		pkgs.hyprshot
+		pkgs.swaynotificationcenter
+		pkgs.swww
+	];
 }

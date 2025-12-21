@@ -1,5 +1,5 @@
 { config, lib, pkgs, ...}:
 
 {
-  services.flatpak.enable = true;
+	services.flatpak.enable = true;
 }

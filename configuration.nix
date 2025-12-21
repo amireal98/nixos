@@ -1,8 +1,7 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-	imports =
-		[
+	imports = [
 			./hardware-configuration.nix
 
 			./modules/nixos/stylix.nix
