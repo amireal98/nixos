@@ -23,6 +23,7 @@
 		pkgs.playerctl
 		pkgs.wine
 		pkgs.shc
+		pkgs.openssh
 
 		# Tui
 		pkgs.lazygit
