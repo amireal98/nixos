@@ -3,7 +3,7 @@
 {
 	stylix = {
 		targets = {
-			zen-broser.enable = false;
+			zen-browser.enable = false;
 			kitty.enable = false;
 		};
 	};
