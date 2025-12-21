@@ -17,6 +17,7 @@ return {
 				"fish",
 				"gitignore",
 				"css",
+				"markdown",
 			},
 			auto_install = false,
 		})
