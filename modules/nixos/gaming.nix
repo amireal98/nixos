@@ -18,6 +18,7 @@
 	environment.systemPackages = [
 		pkgs.gamemode
 		pkgs.lutris
+		pkgs.prismlauncher
 	];
 
 	programs.steam = {

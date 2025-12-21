@@ -40,7 +40,6 @@
 		pkgs.zed-editor
 		pkgs.vscode
 		pkgs.mpv
-		pkgs.prismlauncher
 	];
 
 	fonts.packages = with pkgs; [
