@@ -29,6 +29,7 @@ in
       nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
       l = "ls -l";
       n = "clear && nvim";
+      yz = "clear & yazi";
     };
   };
   programs.zen-browser = {
