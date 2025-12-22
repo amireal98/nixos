@@ -19,6 +19,7 @@
 		pkgs.gamemode
 		pkgs.lutris
 		pkgs.prismlauncher
+		pkgs.mcpelauncher-ui-qt
 	];
 
 	programs.steam = {
