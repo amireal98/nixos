@@ -4,7 +4,7 @@
 	stylix = {
 		enable = true;
 		image = ../../wallpapers/dark-lines.jpeg;
-		autoEnable = true;
+		autoEnable = false;
 
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
 		polarity = "dark";
@@ -29,6 +29,8 @@
 		};
 
 		targets = {
+			gtk.enable = true;
+			qt.enable = true;
 			limine.enable = true;
 			console.enable = true;
 		};
