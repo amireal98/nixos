@@ -44,8 +44,7 @@
 	];
 
 	fonts.packages = with pkgs; [
-		nerd-fonts.iosevka
-		iosevka
+		nerd-fonts.jetbrains-mono
 		noto-fonts
 	];
 }
