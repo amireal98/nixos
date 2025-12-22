@@ -18,6 +18,7 @@ return {
 				"gitignore",
 				"css",
 				"markdown",
+				"rasi",
 			},
 			auto_install = false,
 		})
