@@ -15,11 +15,11 @@
 				name = "Iosevka Nerd Font";
 			};
 			serif = {
-				package = nerd-fonts.iosevka;
+				package = pkgs.nerd-fonts.iosevka;
 				name = "Iosevka Nerd Font";
 			};
 			sansSerif = {
-				package = nerd-fonts.iosevka;
+				package = pkgs.nerd-fonts.iosevka;
 				name = "Iosevka Nerd Font";
 			};
 			emoji = {
