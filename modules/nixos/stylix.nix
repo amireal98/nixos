@@ -15,12 +15,12 @@
 				name = "Iosevka Nerd Font";
 			};
 			serif = {
-				package = pkgs.iosevka;
-				name = "Iosevka Etoile";
+				package = pkgs.nerd-fonts.iosevka-term-slab;
+				name = "IosevkaTermSlab Nerd Font";
 			};
 			sansSerif = {
 				package = pkgs.iosevka;
-				name = "Iosevka Aile";
+				name = "Iosevka";
 			};
 			emoji = {
 				package = pkgs.noto-fonts-color-emoji;
