@@ -1,5 +1,5 @@
 {
-	description = "amireal NixOS configuration";
+	description = "amireal98 NixOS configuration";
   
 	inputs = {
 		nixpkgs.url = "nixpkgs/nixos-unstable";
