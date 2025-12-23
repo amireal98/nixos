@@ -28,7 +28,6 @@
 		# Tui
 		pkgs.lazygit
 		pkgs.yazi
-		pkgs.spotify-player
 		pkgs.fastfetch
 		pkgs.nitch
 		pkgs.cava
