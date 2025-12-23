@@ -22,8 +22,8 @@
 		pkgs.brightnessctl
 		pkgs.playerctl
 		pkgs.wine
-		pkgs.shc
 		pkgs.openssh
+		pkgs.killall
 
 		# Tui
 		pkgs.lazygit
@@ -32,6 +32,7 @@
 		pkgs.nitch
 		pkgs.cava
 		pkgs.astroterm
+		pkgs.btop
 
 		# Gui
 		pkgs.nautilus
