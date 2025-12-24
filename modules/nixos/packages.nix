@@ -33,6 +33,7 @@
 		pkgs.cava
 		pkgs.astroterm
 		pkgs.btop
+		pkgs.spotify-player
 
 		# Gui
 		pkgs.nautilus
