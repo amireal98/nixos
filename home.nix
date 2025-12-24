@@ -9,7 +9,7 @@ in
 		./modules/home-manager/dotfiles.nix
 		# ./modules/home-manager/stylix.nix
 
-		./suckless/suckless-hm.nix
+		# ./suckless/suckless-hm.nix
 
 		inputs.zen-browser.homeModules.beta
 		# inputs.stylix.homeModules.stylix
