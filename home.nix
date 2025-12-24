@@ -7,12 +7,10 @@ in
 {
 	imports = [
 		./modules/home-manager/dotfiles.nix
-		# ./modules/home-manager/stylix.nix
-
-		# ./suckless/suckless-hm.nix
+		./modules/home-manager/stylix.nix
 
 		inputs.zen-browser.homeModules.beta
-		# inputs.stylix.homeModules.stylix
+		inputs.stylix.homeModules.stylix
 	];
   
 	home = {

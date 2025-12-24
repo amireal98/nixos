@@ -47,7 +47,8 @@
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
 					home-manager.backupFileExtension = "bak";
-					# stylix.homeManagerIntegration.autoImport = false;
+					stylix.homeManagerIntegration.autoImport = false;
+					stylix.homeManagerIntegration.followSystem = true;
 				}
 			];
 		};
