@@ -13,6 +13,7 @@
 		./modules/nixos/gaming.nix
 
 		./suckless/suckless.nix
+		./modules/hyprland.nix
 
 		inputs.home-manager.nixosModules.home-manager
 	];
