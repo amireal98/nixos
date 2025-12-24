@@ -36,12 +36,13 @@
 		pkgs.spotify-player
 
 		# Gui
+		pkgs.kitty
 		pkgs.nautilus
 		pkgs.obsidian
 		pkgs.vesktop
 		pkgs.zed-editor
-		pkgs.vscode
 		pkgs.mpv
+		pkgs.feh
 	];
 
 	fonts.packages = with pkgs; [
