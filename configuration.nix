@@ -11,7 +11,6 @@
 			./modules/nixos/audio.nix
 			./modules/nixos/gaming.nix
 
-			./modules/nixos/hyprland.nix
 			./suckless/suckless.nix
 
 			inputs.home-manager.nixosModules.home-manager
