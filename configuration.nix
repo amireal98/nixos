@@ -2,18 +2,19 @@
 
 {
 	imports = [
-			./hardware-configuration.nix # dont change
+		./hardware-configuration.nix # dont change
 
-			./modules/nixos/stylix.nix
-			./modules/nixos/packages.nix
-			./modules/nixos/programs.nix
-			./modules/nixos/services.nix
-			./modules/nixos/audio.nix
-			./modules/nixos/gaming.nix
+		./modules/nixos/stylix.nix
+		./modules/nixos/packages.nix
+		./modules/nixos/programs.nix
+		./modules/nixos/xdg.nix
+		./modules/nixos/services.nix
+		./modules/nixos/audio.nix
+		./modules/nixos/gaming.nix
 
-			./suckless/suckless.nix
+		./suckless/suckless.nix
 
-			inputs.home-manager.nixosModules.home-manager
+		inputs.home-manager.nixosModules.home-manager
 	];
 
 	boot.loader = {
