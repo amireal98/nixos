@@ -7,17 +7,15 @@ return {
 		opts = {
 			indent = { enabled = true },
 			scroll = { enabled = true },
+			gh = { enabled = true },
 
-			animate = {
-				---@type snacks.animate.Config
-				---@field easing? snacks.animate.easing|snacks.animate.easing.Fn
-				{
-					---@type snacks.animate.Duration|number
-					duration = 20,
-					easing = "linear",
-					fps = 62,
-				},
+			lazygit = {
+				enabled = true,
 			},
+		},
+
+		keys = {
+			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" }, -- github
 		},
 	},
 }
