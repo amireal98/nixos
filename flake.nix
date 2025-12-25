@@ -9,7 +9,7 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
     
-		zen-browser = {
+		zen-browser = { # my browser
 			url = "github:0xc000022070/zen-browser-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
@@ -23,7 +23,7 @@
 		system = "x86_64-linux";
 		pkgs = import nixpkgs { inherit system; };
 	in {
-		devShells.${system}.suckless = pkgs.mkShell {
+		devShells.${system}.suckless = pkgs.mkShell { # devshell for code suckless tools
 			packages = with pkgs; [
 				pkg-config
 				xorg.libX11
