@@ -28,8 +28,8 @@ in
 		shellAliases = {
 			nrs = "sudo nixos-rebuild switch --flake ~/Nixos#moon";
 			l = "ls -l";
+			pwr = "powerprofilesctl set";
 			n = "clear && nvim";
-			yz = "yazi && clear";
 			at = "astroterm --color --constellations --speed 10000 --fps 60 && clear";
 		};
 	};
