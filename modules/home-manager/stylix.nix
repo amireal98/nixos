@@ -34,13 +34,7 @@
 
 		targets = {
 			zen-browser.enable = false;
-			kitty = {
-				enable = true;
-				colors = {
-					enable = true;
-					override = true;
-				};
-			};
+			kitty.enable = false;
 		};
 	};
 }
