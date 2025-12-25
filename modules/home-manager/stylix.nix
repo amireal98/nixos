@@ -6,7 +6,7 @@
 		image = ../../wallpapers/dark-lines.jpeg;
 		autoEnable = true;
 
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-medium.yaml";
 		polarity = "dark";
 
 		fonts = {
@@ -34,7 +34,7 @@
 
 		targets = {
 			zen-browser.enable = false;
-			kitty.enable = false;
+			kitty.enable = true;
 		};
 	};
 }
