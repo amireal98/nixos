@@ -34,6 +34,7 @@
 				harfbuzz
 				gcc
 				gnumake
+				musl
 			];
 		};
 
