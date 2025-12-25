@@ -9,5 +9,5 @@ return {
 		},
 		lazy = false, -- neo-tree will lazily load itself
 	},
-	vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal right<CR>", {})
+	vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", {})
 }
