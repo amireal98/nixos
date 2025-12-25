@@ -3,7 +3,7 @@
 {
 	stylix = {
 		enable = true;
-		image = ../../wallpapers/dark-lines.jpeg;
+		image = ../../wallpapers/lycaon.jpeg;
 		autoEnable = true;
 
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
