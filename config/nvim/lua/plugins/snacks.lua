@@ -7,6 +7,17 @@ return {
 		opts = {
 			indent = { enabled = true },
 			scroll = { enabled = true },
+
+			animate = {
+				---@type snacks.animate.Config
+				---@field easing? snacks.animate.easing|snacks.animate.easing.Fn
+				{
+					---@type snacks.animate.Duration|number
+					duration = 20,
+					easing = "linear",
+					fps = 62,
+				},
+			},
 		},
 	},
 }
