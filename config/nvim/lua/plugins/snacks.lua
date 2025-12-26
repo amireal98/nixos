@@ -10,9 +10,15 @@ return {
 			gh       = { enabled = true },
 			terminal = { enabled = true },
 
+			styles = {
+				notification = {
+					wo = { wrap = true },
+				},
+			},
+
 			notifier = {
 				enabled = true,
-				timeout = 2000,
+				timeout = 3000,
 			},
 
 			win = {
@@ -53,13 +59,52 @@ return {
 					unstagedChangesColor       = { fg = "DiagnosticError" },
 				},
 			},
+
+			zen = {
+				enabled = true,
+				---@class snacks.zen.Config
+				---@type table<string, boolean>
+				toggles = {
+					dim = true,
+					git_signs = false,
+					mini_diff_signs = false,
+				},
+				center = true,
+				show = {
+					statusline = false,
+					tabline = false,
+				},
+				---@type snacks.win.Config
+				win = {
+					style = "zen",
+					width = 130,
+				},
+				---@param win snacks.win
+				on_open = function(win) end,
+				---@param win snacks.win
+				on_close = function(win) end,
+				---@type snacks.zen.Config
+				zoom = {
+					toggles = {},
+					center = false,
+					show = {
+						statusline = true,
+						tabline = true,
+						win = {
+							backdrop = false,
+							width = 0,
+						},
+					},
+				},
+			},
 		},
 
 		keys = {
+			-- notifications
 			-- git and github
 			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" },
 			{ "<leader>gl", function() Snacks.lazygit()                       end, desc = "LazyGit" },
-			-- erminal
+			-- terminal
 			{ "<leader>tt", function() Snacks.terminal()                      end, desc = "Toggle terminal", },
 			-- other
 			{ "<leader>z",  function() Snacks.zen()                           end, desc = "Toggle Zen mode", },
