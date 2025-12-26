@@ -8,6 +8,22 @@ return {
 			indent = { enabled = true },
 			scroll = { enabled = true },
 			gh = { enabled = true },
+			terminal = { enabled = true },
+
+			win = {
+				enabled = true,
+				show = true,
+				fixbuf = true,
+				relative = "editor",
+				position = "float",
+				minimal = true,
+				wo = {},
+				bo = {},
+				title_pos = "center",
+				keys = { q = "close" },
+				footer_pos = "center",
+				footer_keys = false,
+			},
 
 			lazygit = {
 				enabled = true,
@@ -35,7 +51,9 @@ return {
 		},
 
 		keys = {
-			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" }, -- github
+			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" }, -- Github pull requests
+			{ "<leader>gl", function() Snacks.lazygit()                       end, desc = "LazyGit" },              -- LazyGit
+			{ "<leader>tt", function() Snacks.terminal()                      end, desc = "Toggle terminal", },     -- Terminal
 		},
 	},
 }
