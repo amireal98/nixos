@@ -5,10 +5,15 @@ return {
 		lazy = false,
 		---@type snacks.Config
 		opts = {
-			indent = { enabled = true },
-			scroll = { enabled = true },
-			gh = { enabled = true },
+			indent   = { enabled = true },
+			scroll   = { enabled = true },
+			gh       = { enabled = true },
 			terminal = { enabled = true },
+
+			notifier = {
+				enabled = true,
+				timeout = 2000,
+			},
 
 			win = {
 				enabled = true,
@@ -51,9 +56,14 @@ return {
 		},
 
 		keys = {
-			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" }, -- Github pull requests
-			{ "<leader>gl", function() Snacks.lazygit()                       end, desc = "LazyGit" },              -- LazyGit
-			{ "<leader>tt", function() Snacks.terminal()                      end, desc = "Toggle terminal", },     -- Terminal
+			-- git and github
+			{ "<leader>gp", function() Snacks.picker.gh_pr({ state = "all" }) end, desc = "Github Pull Requests" },
+			{ "<leader>gl", function() Snacks.lazygit()                       end, desc = "LazyGit" },
+			-- erminal
+			{ "<leader>tt", function() Snacks.terminal()                      end, desc = "Toggle terminal", },
+			-- other
+			{ "<leader>z",  function() Snacks.zen()                           end, desc = "Toggle Zen mode", },
+			{ "<leader>Z",  function() Snacks.zen.zoom()                      end, desc = "Toggle Zoom" },
 		},
 	},
 }
