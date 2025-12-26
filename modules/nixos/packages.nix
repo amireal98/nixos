@@ -34,6 +34,7 @@
 		pkgs.astroterm
 		pkgs.btop
 		pkgs.spotify-player
+		pkgs.fzf
 
 		# Gui
 		pkgs.kitty
