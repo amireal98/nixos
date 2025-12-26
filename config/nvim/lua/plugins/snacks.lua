@@ -14,26 +14,24 @@ return {
 				notification = {
 					wo = { wrap = true },
 				},
+
+				zen = {
+					enter = true,
+					fixbuf = false,
+					minimal = false,
+					width = 135,
+					height = 0,
+					backdrop = { transparent = true, blend = 30 },
+					keys = { q = false },
+					zindex = 40,
+					wo = { winhighlight = "NormalFloat:Normal" },
+					w = { snacks_main = true },
+				},
 			},
 
 			notifier = {
 				enabled = true,
 				timeout = 3000,
-			},
-
-			win = {
-				enabled = true,
-				show = true,
-				fixbuf = true,
-				relative = "editor",
-				position = "float",
-				minimal = true,
-				wo = {},
-				bo = {},
-				title_pos = "center",
-				keys = { q = "close" },
-				footer_pos = "center",
-				footer_keys = false,
 			},
 
 			lazygit = {
@@ -55,7 +53,7 @@ return {
 					inactiveBorderColor        = { fg = "FloatBorder" },
 					optionsTextColor           = { fg = "Function" },
 					searchingActiveBorderColor = { fg = "MatchParen", bold = true },
-					selectedLineBgColor        = { bg = "Visual" }, -- set to `default` to have no background colour
+					selectedLineBgColor        = { bg = "Visual" },
 					unstagedChangesColor       = { fg = "DiagnosticError" },
 				},
 			},
@@ -77,7 +75,6 @@ return {
 				---@type snacks.win.Config
 				win = {
 					style = "zen",
-					width = 130,
 				},
 				---@param win snacks.win
 				on_open = function(win) end,
