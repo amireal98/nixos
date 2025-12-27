@@ -19,7 +19,7 @@ return {
 					enter = true,
 					fixbuf = false,
 					minimal = false,
-					width = 135,
+					width = 110,
 					height = 0,
 					backdrop = { transparent = true, blend = 35 },
 					keys = { q = false },
