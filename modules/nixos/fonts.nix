@@ -2,7 +2,7 @@
 	fonts.packages = with pkgs;
 		let
 			iosevka-custom = (
-				pkgs-iosevka-bin.iosevka.override {
+				pkgs-iosevka-pin.iosevka.override {
 					set = "Custom";
 					privateBuildPlan = {
 						family = "Iosevka Custom";

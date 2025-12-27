@@ -3,12 +3,10 @@
   
 	inputs = {
 		nixpkgs.url = "nixpkgs/nixos-unstable";
-
 		home-manager = {
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-    
 		zen-browser = { # my browser
 			url = "github:0xc000022070/zen-browser-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
@@ -17,9 +15,10 @@
 			url = "github:danth/stylix";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		nixpkgs-iosevka-pin.url = "github:nixos/nixpkgs/ac35b104800bff9028425fec3b6e8a41de2bbfff";
 	};
 
-	outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: let
+	outputs = { self, nixpkgs, home-manager, stylix, nixpkgs-iosevka-pin, ... }@inputs: let
 		system = "x86_64-linux";
 		pkgs = import nixpkgs { inherit system; };
 	in {
