@@ -13,5 +13,5 @@
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
   "telescope.nvim": { "branch": "master", "commit": "e69b434b968a33815e2f02a5c7bd7b8dd4c7d4b2" },
   "tokyonight.nvim": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
-  "yazi.nvim": { "branch": "main", "commit": "290696eff28364d5c7a4c7f7be78836bd5d5dba0" }
+  "yazi.nvim": { "branch": "main", "commit": "5068ce098990b86f868fa2c2c642aacce105d8c1" }
 }
