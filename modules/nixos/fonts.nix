@@ -37,7 +37,7 @@
 			(pkgs.iosevka-bin.override { variant = "Etoile"; })
 			(pkgs.iosevka-bin.override { variant = "Aile"; })
 	];
-	fontconfig = {
+	fontsconfig = {
 		enable = true;
 		antialias = true;
 		hinting.enable = true;
