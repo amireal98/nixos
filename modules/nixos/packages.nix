@@ -46,8 +46,8 @@
 	];
 
 	fonts.packages = with pkgs; [
-		nerd-fonts.iosevka
-		iosevka
+		# nerd-fonts.iosevka
+		# iosevka
 		nerd-fonts.symbols-only
 		noto-fonts
 	];
