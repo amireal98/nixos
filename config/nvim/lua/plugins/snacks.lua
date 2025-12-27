@@ -21,7 +21,7 @@ return {
 					minimal = false,
 					width = 135,
 					height = 0,
-					backdrop = { transparent = true, blend = 30 },
+					backdrop = { transparent = true, blend = 35 },
 					keys = { q = false },
 					zindex = 40,
 					wo = { winhighlight = "NormalFloat:Normal" },
