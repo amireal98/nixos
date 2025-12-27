@@ -1,0 +1,45 @@
+{ inputs, config, lib, pkgs, ... }: {
+	fonts.packages = with pkgs;
+		let
+			iosevka-custom = (
+				pkgs-iosevka-bin.iosevka.override {
+					set = "Custom";
+					privateBuildPlan = {
+						family = "Iosevka Custom";
+						spacing = "FontConfig Mono";
+						serifs = "Sans";
+						noCvSs = true;
+						exportGlyphNames = true;
+						variants.design = {
+							at = "fourfold";
+							lig-equal-chain = "without-notch";
+							lig-hyphen-chain = "without-notch";
+						};
+						ligations = {
+							inherits = "dlig";
+							disables = [
+								"brack-bar"
+								"brace-bar"
+							];
+							enables = [
+								"exeqeq"
+								"eqeqeq"
+								"llggeq"
+								"tildeeq"
+							];
+						};
+					};
+				}
+			);
+		in
+	[
+			iosevka-custom
+			(pkgs.iosevka-bin.override { variant = "Etoile"; })
+			(pkgs.iosevka-bin.override { variant = "Aile"; })
+	];
+	font.fontconfig = {
+		enable = true;
+		antialias = true;
+		hinting.enable = true;
+	};
+}
