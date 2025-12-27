@@ -11,6 +11,7 @@
 		./modules/nixos/services.nix
 		./modules/nixos/audio.nix
 		./modules/nixos/gaming.nix
+		./modules/nixos/fonts.nix
 
 		./suckless/suckless.nix
 		./modules/nixos/hyprland.nix
