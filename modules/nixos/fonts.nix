@@ -1,4 +1,4 @@
-{ inputs, config, lib, pkgs, ... }: {
+{ inputs, config, lib, pkgs, pkgs-iosevka-pin, ... }: {
 	fonts.packages = with pkgs;
 		let
 			iosevka-custom = (
