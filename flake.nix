@@ -41,7 +41,13 @@
 
 		nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
 			inherit system;
-			specialArgs = {inherit inputs;};
+			specialArgs = {
+				inherit inputs;
+				pkgs-iosevka-pin = import nixpkgs-iosevka-pin {
+					system = system;
+					config.allowUnfree = true;
+				};
+			};
 			modules = [
 				./configuration.nix
 				stylix.nixosModules.stylix
