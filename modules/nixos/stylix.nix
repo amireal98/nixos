@@ -11,16 +11,16 @@
 
 		fonts = {
 			monospace = {
-				package = pkgs.nerd-fonts.iosevka;
-				name = "Iosevka Nerd Font";
+				package = pkgs.iosevka;
+				name = "Iosevka Extended";
 			};
 			serif = {
-				package = pkgs.nerd-fonts.iosevka;
-				name = "Iosevka Nerd Font";
+				package = pkgs.iosevka;
+				name = "Iosevka Extended";
 			};
 			sansSerif = {
 				package = pkgs.nerd-fonts.iosevka;
-				name = "Iosevka Nerd Font Extended";
+				name = "Iosevka Extended";
 			};
 			emoji = {
 				package = pkgs.noto-fonts-color-emoji;
