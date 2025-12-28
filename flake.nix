@@ -24,21 +24,6 @@
 		system = "x86_64-linux";
 		pkgs = import nixpkgs { inherit system; };
 	in {
-		devShells.${system}.suckless = pkgs.mkShell { # devshell for code suckless tools
-			packages = with pkgs; [
-				pkg-config
-				xorg.libX11
-				xorg.libXft
-				xorg.libXinerama
-				fontconfig
-				freetype
-				harfbuzz
-				gcc
-				gnumake
-				musl
-			];
-		};
-
 		nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
 			inherit system;
 			specialArgs = {
