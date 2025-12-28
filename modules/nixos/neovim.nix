@@ -1,4 +1,4 @@
-{ lib, pkgs, config, }: {
+{ config, lib, pkgs, ... }: {
   environment.systemPackages = [
     pkgs.neovim
     pkgs.ripgrep
