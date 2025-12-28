@@ -44,13 +44,8 @@ in
     };
   };
 
-  home.packages = [
-    pkgs.neovim
-    pkgs.ripgrep
-    pkgs.nil
-    pkgs.nixpkgs-fmt
-    pkgs.nodejs
-    pkgs.gcc
-  ];
+  # home.packages = [
+  #   pkgs.helix
+  # ];
 
 }

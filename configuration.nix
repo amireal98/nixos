@@ -12,6 +12,7 @@
     ./modules/nixos/audio.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/fonts.nix
+    ./modules/nixos/neovim.nix
 
     ./modules/nixos/hyprland.nix
 
