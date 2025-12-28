@@ -4,8 +4,10 @@ vim.opt.cursorline = true
 vim.opt.relativenumber = true
 vim.opt.showmode = false
 
-vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.softtabstop = 2
 
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
