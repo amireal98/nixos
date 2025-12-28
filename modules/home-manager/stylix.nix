@@ -1,4 +1,4 @@
-{ pkgs, config, stylix, ... }: # Home.nix
+{ pkgs, config, stylix, pkgs-iosevka-pin, ... }: # Home.nix
 
 {
 	stylix = {
@@ -12,15 +12,15 @@
 		fonts = {
 			monospace = {
 				package = pkgs.iosevka;
-				name = "Iosevka Extended";
+				name = "Iosevka Custom Extended";
 			};
 			serif = {
 				package = pkgs.nerd-fonts.iosevka;
-				name = "Iosevka Extended";
+				name = "Iosevka Etoile";
 			};
 			sansSerif = {
 				package = pkgs.nerd-fonts.iosevka;
-				name = "Iosevka Extended";
+				name = "Iosevka Aile";
 			};
 			emoji = {
 				package = pkgs.noto-fonts-color-emoji;
