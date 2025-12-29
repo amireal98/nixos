@@ -9,11 +9,11 @@
 
     fonts = {
       monospace = {
-        package = pkgs.iosevka;
+        package = pkgs.nerd-fonts.iosevka;
         name = "Iosevka Custom Extended";
       };
       serif = {
-        package = pkgs.iosevka;
+        package = pkgs.nerd-fonts.iosevka;
         name = "Iosevka Etoile";
       };
       sansSerif = {
