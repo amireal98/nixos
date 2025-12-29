@@ -19,9 +19,6 @@ return {
         "css",
         "markdown",
         "rasi",
-				"json",
-				"html",
-				"yaml",
       },
       auto_install = false,
     })
