@@ -6,9 +6,7 @@ return {
     config = function()
       require("black-metal").setup({
         -- options here
-        theme = "dark-funeral",
-        variant = "dark",
-        alt_bg = false,
+        theme = "immortal",
         transparent = true,
       })
       require("black-metal").load()
