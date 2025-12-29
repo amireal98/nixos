@@ -35,9 +35,9 @@ do you the space and the stars, don't you?
         header = vim.split(logo, "\n"),
 
         center = {
-          { action = function() vim.cmd("Telescope find_files") end, desc = " my telescope", icon = " ", key = "f" },
-          { action = function() vim.cmd("Yazi cwd") end, desc = " walk a bit", icon = " ", key = "y" },
-          { action = function() vim.cmd("Lazy") end, desc = " my plugins", icon = "󰒲 ", key = "l" },
+          { action = function() vim.cmd("Telescope find_files") end, desc = " find a star with telescope", icon = " ", key = "f" },
+          { action = function() vim.cmd("Yazi cwd") end, desc = " search a stars with yazi", icon = " ", key = "y" },
+          { action = function() vim.cmd("Lazy") end, desc = " my plugins, lazy.nvim", icon = "󰒲 ", key = "l" },
           { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " goodbye", icon = " ", key = "q" },
         },
       },

@@ -33,7 +33,7 @@ return {
         enabled = true,
         style = "out",
         easing = "linear",
-        duration = { step = 20, total = 300 },
+        duration = { step = 60, total = 300 },
       },
 
       notifier = {
