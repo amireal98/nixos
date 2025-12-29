@@ -27,22 +27,22 @@
     nixosConfigurations.moon = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {
-	inherit inputs;
-	pkgs-iosevka-pin = import nixpkgs-iosevka-pin {
-	  system = system;
-	  config.allowUnfree = true;
-	};
+        inherit inputs;
+        pkgs-iosevka-pin = import nixpkgs-iosevka-pin {
+          system = system;
+          config.allowUnfree = true;
+        };
       };
       modules = [
-	./configuration.nix
-	stylix.nixosModules.stylix
-	{
-	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackages = true;
-	  home-manager.backupFileExtension = "bak";
-	  stylix.homeManagerIntegration.autoImport = false;
-	  stylix.homeManagerIntegration.followSystem = true;
-	}
+        ./configuration.nix
+        stylix.nixosModules.stylix
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "bak";
+          stylix.homeManagerIntegration.autoImport = false;
+          stylix.homeManagerIntegration.followSystem = true;
+        }
       ];
     };
   };

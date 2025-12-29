@@ -1,6 +1,4 @@
-{ pkgs, config, stylix, pkgs-iosevka-pin, ... }: # Home.nix
-
-{
+{ pkgs, config, stylix, pkgs-iosevka-pin, ... }: {
   stylix = {
     enable = true;
     image = ../../wallpapers/dark-lines.jpeg;
@@ -11,24 +9,24 @@
 
     fonts = {
       monospace = {
-	package = pkgs.iosevka;
-	name = "Iosevka Custom Extended";
+        package = pkgs.nerd-fonts.iosevka;
+        name = "Iosevka Custom Extended";
       };
       serif = {
-	package = pkgs.nerd-fonts.iosevka;
-	name = "Iosevka Etoile";
+        package = pkgs.nerd-fonts.iosevka;
+        name = "Iosevka Etoile";
       };
       sansSerif = {
-	package = pkgs.nerd-fonts.iosevka;
-	name = "Iosevka Aile";
+        package = pkgs.nerd-fonts.iosevka;
+        name = "Iosevka Aile";
       };
       emoji = {
-	package = pkgs.noto-fonts-color-emoji;
-	name = "Noto Color Emoji";
+        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji";
       };
 
       sizes = {
-	applications = 12;
+        applications = 12;
       };
     };
 

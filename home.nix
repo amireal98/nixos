@@ -1,10 +1,7 @@
 { inputs, pkgs, config, ... }:
-
 let
   username = "amireal";
-in
-
-  {
+in {
   imports = [
     ./modules/home-manager/dotfiles.nix
     ./modules/home-manager/stylix.nix
@@ -37,9 +34,9 @@ in
     enable = true;
     profiles = {
       ${username} = {
-	id = 0;
-	name = "${username}.default";
-	isDefault = true;
+        id = 0;
+        name = "${username}.default";
+        isDefault = true;
       };
     };
   };

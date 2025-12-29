@@ -2,34 +2,34 @@
   fonts.packages = with pkgs;
     let
       iosevka-custom = (
-	pkgs-iosevka-pin.iosevka.override {
-	  set = "Custom";
-	  privateBuildPlan = {
-	    family = "Iosevka Custom";
-	    spacing = "FontConfig Mono";
-	    serifs = "Sans";
-	    noCvSs = true;
-	    exportGlyphNames = true;
-	    variants.design = {
-	      at = "fourfold";
-	      lig-equal-chain = "without-notch";
-	      lig-hyphen-chain = "without-notch";
-	    };
-	    ligations = {
-	      inherits = "dlig";
-	      disables = [
-		"brack-bar"
-		"brace-bar"
-	      ];
-	      enables = [
-		"exeqeq"
-		"eqeqeq"
-		"llggeq"
-		"tildeeq"
-	      ];
-	    };
-	  };
-	}
+        pkgs-iosevka-pin.iosevka.override {
+          set = "Custom";
+          privateBuildPlan = {
+            family = "Iosevka Custom";
+            spacing = "FontConfig Mono";
+            serifs = "Sans";
+            noCvSs = true;
+            exportGlyphNames = true;
+            variants.design = {
+              at = "fourfold";
+              lig-equal-chain = "without-notch";
+              lig-hyphen-chain = "without-notch";
+            };
+            ligations = {
+              inherits = "dlig";
+              disables = [
+                "brack-bar"
+                "brace-bar"
+              ];
+              enables = [
+                "exeqeq"
+                "eqeqeq"
+                "llggeq"
+                "tildeeq"
+              ];
+            };
+          };
+        }
       );
     in
       [
