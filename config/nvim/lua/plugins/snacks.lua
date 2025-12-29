@@ -21,7 +21,7 @@ return {
           minimal = false,
           width = 110,
           height = 0,
-          backdrop = { transparent = true, blend = 35 },
+          backdrop = { transparent = false, blend = 99 },
           keys = { q = false },
           zindex = 40,
           wo = { winhighlight = "NormalFloat:Normal" },
@@ -31,7 +31,7 @@ return {
 
       notifier = {
         enabled = true,
-        timeout = 3000,
+        timeout = 2500,
       },
 
       lazygit = {
