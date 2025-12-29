@@ -29,6 +29,13 @@ return {
         },
       },
 
+      animate = {
+        enabled = true,
+        style = "out",
+        easing = "linear",
+        duration = { step = 20, total = 300 },
+      },
+
       notifier = {
         enabled = true,
         timeout = 2500,
