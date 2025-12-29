@@ -7,6 +7,12 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
     polarity = "dark";
 
+    cursor = {
+      package = pkgs.volantes-cursors;
+      name = "volantes_cursors";
+      size = 12;
+    };
+
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.iosevka;
