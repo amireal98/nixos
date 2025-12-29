@@ -8,10 +8,7 @@ let
     gh = "gh";
     nvim = "nvim";
     spotify-player = "spotify-player";
-
-    picom = "picom";
     hypr = "hypr";
-
     kitty = "kitty";
   };
 in {
