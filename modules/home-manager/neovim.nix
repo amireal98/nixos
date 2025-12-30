@@ -1,5 +1,11 @@
-{ config, lib, pkgs, ... }: {
-  environment.systemPackages = [
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  home.packages = [
     pkgs.neovim
     pkgs.ripgrep
     pkgs.nil

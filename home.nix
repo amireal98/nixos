@@ -1,8 +1,15 @@
-{ inputs, pkgs, config, ... }:
+{
+  inputs,
+  pkgs,
+  config,
+  ...
+}:
 let
   username = "amireal";
-in {
+in
+{
   imports = [
+    ./modules/home-manager/neovim.nix
     ./modules/home-manager/dotfiles.nix
     ./modules/home-manager/stylix.nix
 

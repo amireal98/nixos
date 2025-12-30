@@ -1,4 +1,11 @@
-{ inputs, config, lib, pkgs, ... }: {
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
   imports = [
     ./hardware-configuration.nix # dont change
 
@@ -10,7 +17,6 @@
     ./modules/nixos/audio.nix
     ./modules/nixos/gaming.nix
     ./modules/nixos/fonts.nix
-    ./modules/nixos/neovim.nix
 
     ./modules/nixos/hyprland.nix
 
@@ -36,7 +42,8 @@
   services.displayManager.ly.enable = true;
   services.libinput.enable = true;
 
-  users.users.amireal = { # its me
+  users.users.amireal = {
+    # its me
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
@@ -51,8 +58,10 @@
     };
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   system.stateVersion = "25.11"; # change = boom
 }
-
